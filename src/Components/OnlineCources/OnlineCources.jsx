@@ -93,9 +93,9 @@ const OnlineCources = () => {
             </div>
           ))}
         </div>
-          <div className="font-serif lg:text-[25px] sm:text-2xl text-base text-center text-[#e86a8c] font-semibold mb-1">
+          {/* <div className="font-serif lg:text-[20px] sm:text-2xl text-base text-center text-[#e86a8c] font-semibold mb-1">
           "The Most Comprehensive Debt Collections And Revenue Management Training Courses."
-          </div>
+          </div> */}
         {/* New section added at the end */}
         <div className="flex xl:flex-row flex-col gap-10 md:px-15 justify-between items-start">
           <div className="flex flex-col justify-start">
@@ -110,8 +110,40 @@ const OnlineCources = () => {
                 </h6>
               </div>
             </div>
+            <br></br>            
+
+
+ {/* <div className="font-serif lg:text-[23px] sm:text-2xl text-base text-center text-[#e86a8c] font-semibold mb-1">
+          "The Most Comprehensive Debt Collections And Revenue Management Training Courses."
+          </div> */}
+
             <div className="flex flex-col gap-4 2xl:max-w-[510px] max-w-[460px] lg:ml-[60px] mt-4 px-1">
               <div className="flex flex-col gap-0">
+<p
+                  style={{
+                    background: "linear-gradient(135deg, #f9608a, #f0457a)",
+                    WebkitBackgroundClip: "text",
+                    WebkitTextFillColor: "transparent",
+                    backgroundClip: "text",
+                  }}
+                  className="2xl:text-2xl lg:text-2xl sm:text-base text-sm font-semibold roboto-serif-font text-center mx-auto leading-snug"
+                >
+                  "The Most Comprehensive Debt Collections And Revenue
+                </p>
+
+                <p
+                  style={{
+                    background: "linear-gradient(135deg, #f9608a, #f0457a)",
+                    WebkitBackgroundClip: "text",
+                    WebkitTextFillColor: "transparent",
+                    backgroundClip: "text",
+                  }}
+                  className="2xl:text-2xl lg:text-2xl sm:text-base text-sm font-semibold roboto-serif-font text-center mx-auto leading-snug"
+                >
+                   Management Training Courses."
+                </p>
+                <br></br>
+
                 <p
                   style={{
                     background: "linear-gradient(135deg, #f9608a, #f0457a)",
@@ -123,6 +155,7 @@ const OnlineCources = () => {
                 >
                   "The longer your delinquent accounts go uncollected,
                 </p>
+
                 <p
                   style={{
                     background: "linear-gradient(135deg, #f9608a, #f0457a)",
@@ -134,7 +167,10 @@ const OnlineCources = () => {
                 >
                   the more difficult they will be to collect or recover"
                 </p>
+
+                
               </div>
+
               <p
               style={{
                 background: "linear-gradient(135deg, #4ecdc4, #45b89a)",

@@ -50,14 +50,14 @@ const ExploreCardData = [
     title: "Debt Collections and Strategies and Techniques for Banks and Other Financial Institutions – National Bank of Dominica, Roseau, Dominica", 
     desc: "",
   },
-  {
-    id: 5,
-    videoUrl: CoursePdf.Testimonials131412032027, // Make sure this is a direct PDF URL
-    icon: images.cardicon1,
-    image: images.pdf,
-    title: "Human Resource Management Procedures for Public & Private Corporations- St. Christopher Air & Sea Ports Authority (SCASPA), St. Kitts & Nevis", 
-    desc: "",
-  },
+  // {
+  //   id: 5,
+  //   videoUrl: CoursePdf.Testimonials131412032027, // Make sure this is a direct PDF URL
+  //   icon: images.cardicon1,
+  //   image: images.pdf,
+  //   title: "Human Resource Management Procedures for Public & Private Corporations- St. Christopher Air & Sea Ports Authority (SCASPA), St. Kitts & Nevis", 
+  //   desc: "",
+  // },
   {
     id: 6,
     videoUrl: CoursePdf.Testimonials131412032028, // Make sure this is a direct PDF URL
@@ -72,6 +72,38 @@ const ExploreCardData = [
     icon: images.cardicon1,
     image: images.pdf,
     title: "CK 700A Debt Collection and Revenue Management for Utility Corporations: Dominica Electricity Services Ltd. (DOMLEC), Dominica", 
+    desc: "",
+  },
+  {
+    id: 8,
+    videoUrl: CoursePdf.debtcolltraining, // Make sure this is a direct PDF URL
+    icon: images.cardicon1,
+    image: images.pdf,
+    title: "Debt Collection and revenue management training testimonials for banks and other financial institutions", 
+    desc: "",
+  },
+  {
+    id: 9,
+    // videoUrl: CoursePdf.Testimonials131412032029, // Make sure this is a direct PDF URL
+    icon: images.cardicon1,
+    image: images.pdf,
+    title: "Authentic Call Center and Customer Service Training Testimonials from Our Valued Clients", 
+    desc: "",
+  },
+  {
+    id: 10,
+    // videoUrl: CoursePdf.Testimonials131412032026, // Make sure this is a direct PDF URL
+    icon: images.cardicon1,
+    image: images.pdf,
+    title: "Inspiring Debt Collection and Revenue Management Training Testimonials from Our Satisfied Clients", 
+    desc: "",
+  },
+  {
+    id: 11,
+    videoUrl: CoursePdf.Testimonials131412032026, // Make sure this is a direct PDF URL
+    icon: images.cardicon1,
+    image: images.pdf,
+    title: "Debt Collections and Revenue Management Regional Training Testimonials from our Valued Clients", 
     desc: "",
   },
   // {
