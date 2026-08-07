@@ -32,9 +32,20 @@ const OnlineCources = () => {
                 Schedule - Zoom Platform
               </h1>
             </Link>
-            
-
-            
+          </div>
+        </div>
+<br></br>
+          <div className="mx-auto">
+          <div>
+            <Link
+              to="/courseschedule2027"
+              className="font-serif lg:text-[36px] sm:text-2xl text-base text-center text-primary font-semibold"
+            >
+              <h1 className="text-primary 2xl:text-[40px] lg:text-4xl 2xl:leading-[40px] sm:text-3xl text-base text-center roboto-serif-font font-semibold break-words">
+                2027, Debt Collections and Revenue Management Virtual Training
+                Schedule - Zoom Platform
+              </h1>
+            </Link>
           </div>
         </div>
 

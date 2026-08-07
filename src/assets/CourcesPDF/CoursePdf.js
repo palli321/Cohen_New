@@ -74,6 +74,7 @@ import Testimonials12032026 from "./2026 TESTIMONIALS JANUARY NATIONAL INSURANCE
 import Testimonials120312032025 from "./12032025-Testimonial CK 6124G Debt Coll and Rev Mgt for Government Organizations.pdf"
 import Testimonials120312032026 from "./CK 7135 Debt Collections and Revenue Management for Banks and Other Financial Institutions.pdf"
 import Testimonials131412032026 from "./CK 700 DEBT COLLECTIONS AND REV MGT PROCEDURES 2026.pdf"
+import Testimonials131412032035 from "./Testimonials131412032035.pdf";
 import Testimonials131412032027 from "./CK 1400 HUMAN RESOURCES TESTIMONIALS 2026.pdf"
 
 import Testimonials131412032028 from "./2026 TESTIMONIALS FEVBRUARY CK 700A UTILITY CORPORATIONS SKELEC.pdf"
@@ -161,7 +162,8 @@ const CoursePdf = {
     Testimonials131412032026,
     Testimonials131412032027,
     Testimonials131412032028,
-    Testimonials131412032029
+    Testimonials131412032029,
+    Testimonials131412032035
 };
 
 export default CoursePdf;

@@ -113,18 +113,31 @@ const Hero = () => {
               <h2 className="text-primary 2xl:text-[30px] lg:text-4xl 2xl:leading-[53px] sm:text-3xl text-base text-center roboto-serif-font font-semibold break-words">
                 Discover from our 1000+ Premium Courses!
               </h2>
-              <p className="text-secondary 2xl:text-2xl lg:text-xl sm:text-base text-xs  font-medium roboto-serif-font xl:max-w-[800px] lg:max-w-[700px] sm:max-w-[600px] max-w-[400px] text-center relative lg:leading-10 sm:leading-8 leading-6">
-                <span className="font-bold text-white pr-3 ">
-                  Explore a vast collection
-                </span>
+              {/* <p className="text-secondary 2xl:text-2xl lg:text-xl sm:text-base text-xs  font-medium roboto-serif-font xl:max-w-[800px] lg:max-w-[700px] sm:max-w-[600px] max-w-[400px] text-center relative lg:leading-10 sm:leading-8 leading-6">
+                <span className="font-bold text-[#2DD4BF] pr-3">
+                    Explore a vast collection
+                 </span>
                 <img
                   src={yellowpatti}
                   alt=""
                   className="absolute top-0.5 sm:top-1 lg:top-1 sm:left-6  left-2 lg:-left-1 xl:-left-3 -z-10 max-w-[170px] sm:max-w-[220px] lg:max-w-[290px] 2xl:max-w-[330px] "
                 />
-                of customized industry training courses designed to elevate your
-                skills and knowledge.
+                of customized industry training courses designed to elevate your skills and knowledge.
+              </p> */}
+
+
+<p className="text-[#69CCA9] 2xl:text-2xl lg:text-xl sm:text-base text-xs  font-medium roboto-serif-font max-w-[400px] sm:max-w-none sm:w-fit sm:mx-auto sm:whitespace-nowrap text-center relative lg:leading-10 sm:leading-8 leading-6">
+                <span className="font-bold text-[#69CCA9] pr-3">
+                    Explore a vast collection
+                 </span>
+                {/* <img
+                  src={yellowpatti}
+                  alt=""
+                  className="absolute top-0.5 sm:top-1 lg:top-1 sm:left-6  left-2 lg:-left-1 xl:-left-3 -z-10 max-w-[170px] sm:max-w-[220px] lg:max-w-[290px] 2xl:max-w-[330px] "
+                /> */}
+                of customized industry training courses designed to elevate your skills and knowledge.
               </p>
+
             </div>
 
             {/* Search Input Section */}

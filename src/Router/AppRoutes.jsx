@@ -21,6 +21,8 @@ import Thankyou from "../Pages/Thankyou";
 import Contact from "../Pages/Contact";
 import Video from "../Pages/Video";
 import CourseSchedule from "../Components/OnlineCources/CourseSchedule";
+import CourseSchedule2027 from "../Components/OnlineCources/CourseSchedule2027";
+
 
 const AppRoutes = () => {
   return (
@@ -48,6 +50,7 @@ const AppRoutes = () => {
         <Route path="/thankyou" element={<Thankyou />} />
         <Route path="/video" element={<Video />} />
         <Route path="/courseschedule" element={<CourseSchedule />} />
+        <Route path="/courseschedule2027" element={<CourseSchedule2027 />} />
       </Routes>
       <Footer />
     </Router>

@@ -29,7 +29,7 @@ const Explore = () => {
       <div className="mx-auto flex justify-center">
         <div>
           <h3 className="font-serif sm:text-[34px] text-xl text-center text-primary font-semibold">
-           Some Additional Testimonials With Proven Results.
+           Some Additional Debt Collections & Revenue Management Testimonials With Proven Results
           </h3>
           {/* <p className="roboto-serif-font font-bold sm:text-[21px] text-xs text-secondary pt-[10px] flex justify-center">
             Gain insights into our vision and explore engaging videos.

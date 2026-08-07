@@ -76,10 +76,10 @@ const ExploreCardData = [
   },
   {
     id: 8,
-    videoUrl: CoursePdf.debtcolltraining, // Make sure this is a direct PDF URL
+    videoUrl: CoursePdf.Testimonials131412032035, // Make sure this is a direct PDF URL
     icon: images.cardicon1,
     image: images.pdf,
-    title: "Debt Collection and revenue management training testimonials for banks and other financial institutions", 
+    title: "CK 6343 Micro-Financial (MSME) Debt Collections & Revenue Management Procedures for Commercial Banks and Other Financial Institutions Testimonials", 
     desc: "",
   },
   {
@@ -256,6 +256,88 @@ const PartnerData = [
     img: images.logo90,
     title: "National Insurance Corporation (NIC) Castries, Saint Lucia",
   },
+  {
+    id: 19,
+    img: images.logo5,
+    title: "Grenada Co-Operative Bank Grenada",
+  },
+  {
+    id: 20,
+    img: images.logo6,
+    title: "Jonas, Brown & Hubbard Grenada",
+  },
+  {
+    id: 21,
+    img: images.logo7,
+    title: "Medical Benefits Schemes Antigua & Barbuda",
+  },
+  {
+    id: 23,
+    img: images.logo9,
+    title: "Republic Bank Grenada & Guyana",
+  },
+  {
+    id: 24,
+    img: images.logo10,
+    title: "Turks & Caicos Utilities Turks & Caicos Islands",
+  },
+  {
+    id: 25,
+    img: images.logo11,
+    title: "Nassau Guardian The Bahamas",
+  },
+  {
+    id: 26,
+    img: images.logo12,
+    title: "TELEM & Tell-Cell St. Maarten",
+  },
+  {
+    id: 27,
+    img: images.logo13,
+    title: "Royal Bank Various Islands in the Caribbean",
+  },
+  {
+    id: 28,
+    img: images.logo14,
+    title: "Chase Manhattan Bank US Virginia Islands",
+  },
+  {
+    id: 29,
+    img: images.logo15,
+    title: "Cable & Wireless Various Countries",
+  },
+  {
+    id: 30,
+    img: images.logo16,
+    title: "Treasury Department Cayman Islands",
+  },
+  {
+    id: 31,
+    img: images.logo17,
+    title: "Tax Revenue Department St. Kitts & Nevis",
+  },
+  {
+    id: 32,
+    img: images.logo22,
+    title: "Fidelity Bank The Bahamas & Cayma Islands",
+  },
+  {
+    id: 46,
+    img: images.logo32,
+    title: "Department of Tourism Cayman Islands ",
+  },
+  {
+    id: 47,
+    img: images.logo33,
+    title: "Coco Cola, Trinidad Trinidad & Tobago ",
+  },
+  {
+    id: 36,
+    img: images.logo21,
+    title: "SOL (Shell) Various Countries",
+  }
+  
+  
 ];
 const PartnerData2 = [
   {
@@ -919,6 +1001,132 @@ const Onlinecourcesdata = [
       "CK 6343: Micro-Financing (MSME) Debt Collections and Revenue Management Procedures for Loans and Financial Institutions.",
   }
 ];
+
+const Onlinecourcesdata2027 = [
+  {
+    id: 1,
+    rd: "January 12, 2027",
+    date: "February 02-05 OR 09-12, 2027",
+    title: "CK 700A: Debt Collections and Revenue Management Strategies and Techniques for Utility Corporations.",
+  },
+  {
+    id: 2,
+    rd: "January 12, 2027",
+    date: "February 16-19 OR 23-26, 2027",
+    title: "CK 7135: Debt Collections Strategies and Techniques for Banks and Other Financial Institutions.",
+  },
+  {
+    id: 3,
+    rd: "February 10, 2027",
+    date: "March 02-05 OR 23-27, 2027",
+    title: "CK 7057: Credit Cards Debt Collections and Revenue Management Procedures.",
+  },
+  
+  {
+    id: 4,
+    rd: "January 12, 2027",
+    date: "March 3-6 OR 10-13, 2027",
+    title: "CK 6486: Student Loans Debt Collections and Revenue Management Procedures",
+  },
+  {
+    id: 5,
+    rd: "January 12, 2027",
+    date: "March 17-20 OR 24-27, 2027",
+    title: "CK 7038: Debt Collections and Revenue Management Procedures for Social Security Schemes (Boards), Statutory Deductions, as well as National Health Insurance Schemes.",
+  },
+  {
+    id: 6,
+    rd: "March 3, 2027",
+    date: "April 14-17 OR 21-24, 2027",
+    title: "CK 6124: Government Taxes Debt Collections and Revenue Management Procedures.",
+  },
+  {
+    id: 7,
+    rd: "April 3, 2027",
+    date: "May 5-8 OR 12-15, 2027",
+    title: "CK 7136: B2B Debt Collections and Revenue Management Procedures",
+  },
+  {
+    id: 8,
+    rd: "April 3, 2027",
+    date: "May 19-22 OR 26-29, 2027",
+    title: "CK 7039: Debt Collections and Revenue Management Procedures for the National Lotteries Control Board and Commissions.",
+  },
+  {
+    id: 9,
+    rd: "May 5, 2027",
+    date: "June 2-5 OR 9-12, 2027",
+    title: "CK 6396: City and Government Municipalities Debt Collections and Revenue Management Procedures",
+  },
+  {
+    id: 10,
+    rd: "May 5, 2027",
+    date: "June 16-19 OR 23-26, 2027",
+    title: "CK 7079: Civil Aviation and Airports Debt Collections and Revenue Management Procedures.",
+  },
+  {
+    id: 11,
+    rd: "April 2, 2027",
+    date: "July 7-10 OR 14-17, 2027",
+    title: "CK 7050: Hospital, and Healthcare Debt Collections and Revenue Management Procedures",
+  },
+  {
+    id: 12,
+    rd: "April 2, 2027",
+    date: "July 16-19, 2027",
+    title: "CK 7116: Customs Revenue Management Procedure.",
+  },
+  {
+    id: 13,
+    rd: "July 2, 2027",
+    date: "August 4-7 OR 11-14, 2027",
+    title: "CK 7137: Merchant Cash Advanced Debt Collections and Revenue Management Procedures",
+  },
+  {
+    id: 14,
+    rd: "July 2, 2027",
+    date: "August 18-21 OR 25-28, 2027",
+    title: "CK 7087: National Housing Loans Debt Collections and Revenue Management Procedures.",
+  },
+  {
+    id: 15,
+    rd: "August 4, 2027",
+    date: "September 1-4 OR 8-11, 2027",
+    title: "CK 7052: Commercial and Residential Real Estate Debt Collections and Revenue Management Procedures",
+  },
+  {
+    id: 16,
+    rd: "August 4, 2027",
+    date: "September 15-18 OR 22-25, 2027",
+    title: "CK 6243: Government Treasury Revenue, Tax Compliance Collections Management Procedures.",
+  },
+  {
+    id: 17,
+    rd: "September 2, 2027",
+    date: "October 6-9 OR 13-16, 2027",
+    title: "CK 7138: Hotels and Tourism Industry Debt Collections and Revenue Management Procedures",
+  },
+  {
+    id: 18,
+    rd: "September 2, 2027",
+    date: "October 20-23 OR 27-30, 2027",
+    title: "CK 7077: Hire-Purchase Providers Debt Collections and Revenue Management Procedures.",
+  },
+  {
+    id: 19,
+    rd: "October 6, 2027",
+    date: "November 10-13 OR 17-20, 2027",
+    title: "CK 7057: Credit Cards Debt Collections and Revenue Management Procedures.",
+  },
+  {
+    id: 20,
+    rd: "November 11, 2027",
+    date: "December 1-4 OR 8-11, 2027",
+    title: "CK 6343: Micro-Financing (MSME) Debt Collections and Revenue Management Procedures for Loans and Financial Institutions.",
+  },
+];
+
+
 const Categorydata = [
   {
     id: 1,
@@ -1743,6 +1951,7 @@ const aboutbannerData = [
 export {
   HeroFourData,
   Onlinecourcesdata,
+  Onlinecourcesdata2027,
   CategoriesData,
   CategoriesData2,
   Categorydata,

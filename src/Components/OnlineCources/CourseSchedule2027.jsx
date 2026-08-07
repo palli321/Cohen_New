@@ -1,11 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Onlinecourcesdata } from "../../data.js";
+import { Onlinecourcesdata2027 } from "../../data"; // apna actual path daal dena
 import { FaRegCalendarAlt } from "react-icons/fa";
 import CoursePdf from "../../assets/CourcesPDF/CoursePdf.js";
-import Explore from "../Explore/Explore";
 import images from "../../assets/Images/img";
-const CourseSchedule = () => {
+const CourseSchedule2027 = () => {
   return (
     <div>
       <div className=" pt-9 padding-2xl lg:px-15 px-4 roboto">
@@ -17,10 +16,10 @@ const CourseSchedule = () => {
         </Link>
 
         <h1 className="text-primary 2xl:text-4xl lg:text-3xl sm:text-2xl text-xl text-center roboto-serif-font font-semibold mt-4 mb-2">
-          2026 Debt Collections and Revenue Management Training Schedule
+          2027 Debt Collections and Revenue Management Training Schedule
         </h1>
         <p className="text-center text-primary roboto-serif-font 2xl:text-lg sm:text-base text-sm mb-2">
-          Comprehensive Operational & Procedural Manuals With All Zoom Platform Training Courses.
+          Comprehensive Operational & Procedural Manuals for each Zoom Training Courses.
         </p>
         
             <div className="flex xl:flex-row flex-col mt-6 gap-10 md:px-15 justify-center">
@@ -32,7 +31,7 @@ const CourseSchedule = () => {
                   <img src={images.pdf} alt="" className="max-w-12 h-12 " />
                   <div>
                     <h6 className="text-primary font-medium roboto-serif-font 2xl:text-xl sm:text-lg text-base">
-                      Click here for 2026 Debt Collection Training Schedule
+                      Click here for 2027 Debt Collection Training Schedule
                     </h6>
                   </div>
                 </div>
@@ -45,7 +44,7 @@ const CourseSchedule = () => {
                   <img src={images.pdf} alt="" className="max-w-12 h-12 " />
                   <div>
                     <h6 className="text-primary font-medium roboto-serif-font 2xl:text-xl sm:text-lg text-base">
-                      Click here for 2026 Debt Collection Training Outline
+                      Click here for 2027 Debt Collection Training Outline
                     </h6>
                   </div>
                 </div>
@@ -53,7 +52,7 @@ const CourseSchedule = () => {
             </div>
         
         <div className="grid 2xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-x-10 gap-y-12.5 my-15 ">
-          {Onlinecourcesdata.sort((a, b) => a.id - b.id).map((item, index) => (
+          {Onlinecourcesdata2027.sort((a, b) => a.id - b.id).map((item, index) => (
             <div
               onClick={() => window.open(CoursePdf.pdf2026, "_blank")}
               key={index}
@@ -78,10 +77,8 @@ const CourseSchedule = () => {
           ))}
         </div>
       </div>
-      
-      <Explore />
     </div>
   );
 };
 
-export default CourseSchedule;
+export default CourseSchedule2027;
