@@ -3,6 +3,7 @@ import images from "../../assets/Images/img";
 import CoursePdf from "../../assets/CourcesPDF/CoursePdf.js";
 import { Link } from "react-router-dom";
 import icons from "../../assets/icons/icon.js";
+import HomeVideo2 from "../HomeVideo2/HomeVideo2";
 
 const OnlineCources = () => {
   return (
@@ -48,6 +49,9 @@ const OnlineCources = () => {
             </Link>
           </div>
         </div>
+         <HomeVideo2 />
+        
+        
 
         {/* New section added at the end */}
         <div className="flex xl:flex-row flex-col gap-10 md:px-15 justify-between items-start">

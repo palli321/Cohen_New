@@ -22,6 +22,8 @@ const CourseSchedule = () => {
         <p className="text-center text-primary roboto-serif-font 2xl:text-lg sm:text-base text-sm mb-2">
           Comprehensive Operational & Procedural Manuals With All Zoom Platform Training Courses.
         </p>
+
+        
         
             <div className="flex xl:flex-row flex-col mt-6 gap-10 md:px-15 justify-center">
               <div className="flex justify-center md:justify-end lg:justify-center ">

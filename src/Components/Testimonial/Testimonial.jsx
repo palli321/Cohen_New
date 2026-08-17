@@ -7,7 +7,7 @@ import CoursePdf from "../../assets/CourcesPDF/CoursePdf.js";
 import { FaYoutube } from "react-icons/fa";
 const Testimonial = () => {
   return (
-    <div className="roboto pb-[80px] bg-[#FFFAF2] mx-auto">
+    <div className="roboto pb-[0px] bg-[#FFFAF2] mx-auto">
       <div className="z-10">
         <div className="px-4 sm:px-6 lg:px-12">
          
