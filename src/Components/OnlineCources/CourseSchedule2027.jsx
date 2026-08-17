@@ -26,7 +26,7 @@ const CourseSchedule2027 = () => {
               <div className="flex justify-center md:justify-end lg:justify-center ">
                 <div
                   className="flex relative z-10 bg-white border-[2px] rounded-[10px] border-[#f8c67b]  p-2 gap-[15px] items-center cursor-pointer"
-                  onClick={() => window.open(CoursePdf.pdf202612, "_blank")}
+                  onClick={() => window.open(CoursePdf.pdf2027flyer, "_blank")}
                 >
                   <img src={images.pdf} alt="" className="max-w-12 h-12 " />
                   <div>
@@ -39,7 +39,7 @@ const CourseSchedule2027 = () => {
               <div className="flex justify-center md:justify-end lg:justify-center">
                 <div
                   className="flex relative z-10 bg-white border-[2px] rounded-[10px] border-[#f8c67b] p-2 gap-[15px] items-center cursor-pointer"
-                  onClick={() => window.open(CoursePdf.pdf2026, "_blank")}
+                  onClick={() => window.open(CoursePdf.pdf2027flyer, "_blank")}
                 >
                   <img src={images.pdf} alt="" className="max-w-12 h-12 " />
                   <div>
@@ -54,7 +54,7 @@ const CourseSchedule2027 = () => {
         <div className="grid 2xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-x-10 gap-y-12.5 my-15 ">
           {Onlinecourcesdata2027.sort((a, b) => a.id - b.id).map((item, index) => (
             <div
-              onClick={() => window.open(CoursePdf.pdf2026, "_blank")}
+              onClick={() => window.open(CoursePdf.pdf202612, "_blank")}
               key={index}
               className="bg-[#F2F9FF] p-5 relative hover:drop-shadow-[0_0_40px_rgba(1,61,123,0.1)] group hover:bg-white duration-300 transition-all cursor-pointer flex flex-col justify-between min-h-[180px]"
             >

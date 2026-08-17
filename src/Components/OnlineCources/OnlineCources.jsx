@@ -4,6 +4,7 @@ import CoursePdf from "../../assets/CourcesPDF/CoursePdf.js";
 import { Link } from "react-router-dom";
 import icons from "../../assets/icons/icon.js";
 import HomeVideo2 from "../HomeVideo2/HomeVideo2";
+import PremiumPlans from "../PremiumPlans/PremiumPlans";
 
 const OnlineCources = () => {
   return (
@@ -50,6 +51,7 @@ const OnlineCources = () => {
           </div>
         </div>
          <HomeVideo2 />
+         <PremiumPlans />
         
         
 

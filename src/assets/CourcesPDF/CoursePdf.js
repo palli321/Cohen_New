@@ -81,10 +81,14 @@ import Testimonials131412032028 from "./2026 TESTIMONIALS FEVBRUARY CK 700A UTIL
 import Testimonials131412032029 from "./2026 TESTIMONIALS FEVBRUARY CK 700A UTILITY CORPORATIONS.pdf"
 import sometopicpdf from "./Some Topic.pdf"
 import historypdf from "./History-C&K.pdf"
+import pdf2027flyer from "./2027 Updated Flyer.pdf";
+
+
 const CoursePdf = {
     sometopicpdf,
     historypdf,
     debtcolltraining,
+    pdf2027flyer,
     pdf2026,
     pdf202612,
     pdf2024,
