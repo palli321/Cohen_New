@@ -5,6 +5,8 @@ import { FaRegCalendarAlt } from "react-icons/fa";
 import CoursePdf from "../../assets/CourcesPDF/CoursePdf.js";
 import images from "../../assets/Images/img";
 const CourseSchedule2027 = () => {
+  const sortedData = [...Onlinecourcesdata2027].sort((a, b) => a.id - b.id);
+
   return (
     <div>
       <div className=" pt-9 padding-2xl lg:px-15 px-4 roboto">
@@ -52,29 +54,42 @@ const CourseSchedule2027 = () => {
             </div>
         
         <div className="grid 2xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-x-10 gap-y-12.5 my-15 ">
-          {Onlinecourcesdata2027.sort((a, b) => a.id - b.id).map((item, index) => (
-            <div
-              onClick={() => window.open(CoursePdf.pdf202612, "_blank")}
-              key={index}
-              className="bg-[#F2F9FF] p-5 relative hover:drop-shadow-[0_0_40px_rgba(1,61,123,0.1)] group hover:bg-white duration-300 transition-all cursor-pointer flex flex-col justify-between min-h-[180px]"
-            >
-              <div className="absolute -top-2 flex group-hover:bg-primary bg-secondary pt-0.5 pb-0.5 px-2.5 items-center text-white gap-3 rounded-[5px] text-base font-medium roboto transition-all duration-500">
-                <FaRegCalendarAlt />
-                {item.date}
+          {sortedData.map((item, index) => {
+            const isLastEight = index >= sortedData.length - 8;
+            return (
+              <div
+                onClick={() => window.open(CoursePdf.pdf202612, "_blank")}
+                key={index}
+                className="bg-[#F2F9FF] p-5 relative hover:drop-shadow-[0_0_40px_rgba(1,61,123,0.1)] group hover:bg-white duration-300 transition-all cursor-pointer flex flex-col justify-between min-h-[180px]"
+              >
+                <div
+                  className={`absolute -top-2 flex pt-0.5 pb-0.5 px-2.5 items-center text-white gap-3 rounded-[5px] text-base font-medium roboto transition-all duration-500 ${
+                    isLastEight
+                      ? "bg-green-600 group-hover:bg-green-700"
+                      : "bg-secondary group-hover:bg-primary"
+                  }`}
+                >
+                  <FaRegCalendarAlt />
+                  {item.date}
+                </div>
+                <div>
+                  <h3
+                    className={`roboto-serif-font font-medium sm:text-xl text-base sm:pb-2.5 pb-1 ${
+                      isLastEight ? "text-green-600" : "text-primary"
+                    }`}
+                  >
+                    {item.title}
+                  </h3>
+                </div>
+                <div className="">
+                  <p className="footer-content roboto font-normal sm:text-base text-xs text-blacklight flex items-center gap-0.5 sm:pt-2.5 pt-1 whitespace-nowrap border-t-[1px] border-gray-200">
+                    <span>Registration Deadline: </span>
+                    <span>{item.rd}</span>
+                  </p>
+                </div>
               </div>
-              <div>
-                <h3 className="roboto-serif-font font-medium sm:text-xl text-base text-primary sm:pb-2.5 pb-1 ">
-                  {item.title}
-                </h3>
-              </div>
-              <div className="">
-                <p className="footer-content roboto font-normal sm:text-base text-xs text-blacklight flex items-center gap-0.5 sm:pt-2.5 pt-1 whitespace-nowrap border-t-[1px] border-gray-200">
-                  <span>Registration Deadline: </span>
-                  <span>{item.rd}</span>
-                </p>
-              </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </div>
