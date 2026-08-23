@@ -51,12 +51,14 @@ const PremiumPlans = () => {
   return (
     <div className="py-[60px] px-4 lg:px-15 roboto">
       <h2 className="text-primary 2xl:text-4xl lg:text-3xl sm:text-2xl text-xl text-center roboto-serif-font font-semibold mb-3">
-        Choose Your Training Plan
+        Choose Your Online Video Training Plan
       </h2>
-      <p className="text-center text-gray-500 max-w-[600px] mx-auto mb-12 sm:text-base text-sm">
+      
+      <br></br>
+      {/* <p className="text-center text-gray-500 max-w-[600px] mx-auto mb-12 sm:text-base text-sm">
         Pick the plan that fits your team's debt collection and revenue
         management training needs.
-      </p>
+      </p> */}
 
       <div className="flex flex-col lg:flex-row gap-8 justify-center items-stretch max-w-[1200px] mx-auto">
         {plans.map((plan) => (

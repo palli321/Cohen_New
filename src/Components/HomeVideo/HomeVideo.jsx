@@ -62,9 +62,9 @@ const HomeVideo = () => {
   return (
     <div className="pt-9 padding-2xl lg:px-15 px-4 roboto">
       <div className="mx-auto flex justify-center">
-        {/* <h3 className="font-serif sm:text-[36px] text-xl text-center text-primary font-semibold">
-          Cohen & Klein Consulting Inc Training Videos Overview
-        </h3> */}
+        <h3 className="font-serif sm:text-[36px] text-xl text-center text-primary font-semibold">
+          Some Additional Debt Collections & Revenue Management Training Testimonials With Proven Results
+        </h3>
       </div>
 
       <div className="py-[70px]">
