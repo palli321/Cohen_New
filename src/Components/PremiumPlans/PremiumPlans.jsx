@@ -5,7 +5,7 @@ const plans = [
     name: "Silver",
     price: "$499",
     duration: "/ year",
-    accent: "#9CA3AF",
+    accent: "#6B7280",
     badge: null,
     dark: false,
     features: [
@@ -51,9 +51,9 @@ const PremiumPlans = () => {
   return (
     <div className="py-[60px] px-4 lg:px-15 roboto">
       <h2 className="text-primary 2xl:text-4xl lg:text-3xl sm:text-2xl text-xl text-center roboto-serif-font font-semibold mb-3">
-        Choose Your Online Video Training Plan
+        Choose Your Online Debt Collection Video Training Subscription Plan
       </h2>
-      
+
       <br></br>
       {/* <p className="text-center text-gray-500 max-w-[600px] mx-auto mb-12 sm:text-base text-sm">
         Pick the plan that fits your team's debt collection and revenue
@@ -68,13 +68,19 @@ const PremiumPlans = () => {
               plan.dark
                 ? "bg-primary text-white shadow-[0_8px_50px_rgba(1,61,123,0.35)]"
                 : plan.badge
-                ? "z-10 bg-white shadow-[0_8px_50px_rgba(248,198,123,0.35)] border-[2px] border-[#f8c67b] lg:scale-105"
-                : "bg-white shadow-[0_4px_40px_rgba(1,61,123,0.10)] border-[2px] border-transparent"
+                ? "z-10 bg-white shadow-[0_10px_60px_rgba(248,198,123,0.45)] border-[3px] border-[#f8c67b] lg:scale-110"
+                : "z-[5] bg-white shadow-[0_8px_50px_rgba(107,114,128,0.25)] border-[3px] border-[#9CA3AF] lg:scale-105"
             }`}
           >
             {plan.badge && (
-              <span className="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full bg-[#f8c67b] text-white text-xs font-semibold roboto-serif-font tracking-wide whitespace-nowrap">
+              <span className="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full bg-[#f8c67b] text-white text-xs font-semibold roboto-serif-font tracking-wide whitespace-nowrap shadow-md">
                 {plan.badge}
+              </span>
+            )}
+
+            {!plan.dark && !plan.badge && (
+              <span className="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full bg-[#6B7280] text-white text-xs font-semibold roboto-serif-font tracking-wide whitespace-nowrap shadow-md">
+                GREAT VALUE
               </span>
             )}
 
@@ -112,7 +118,7 @@ const PremiumPlans = () => {
                 >
                   <span
                     className="mt-[3px] flex-shrink-0 w-[18px] h-[18px] rounded-full flex items-center justify-center text-white text-[11px]"
-                    style={{ backgroundColor: "#f8c67b" }}
+                    style={{ backgroundColor: plan.dark ? "#f8c67b" : plan.accent }}
                   >
                     ✓
                   </span>
@@ -125,6 +131,8 @@ const PremiumPlans = () => {
               className={`w-full py-[12px] rounded-[8px] font-semibold roboto-serif-font transition-colors cursor-pointer ${
                 plan.dark || plan.badge
                   ? "bg-[#f8c67b] text-white hover:bg-[#e5ac52]"
+                  : !plan.dark && !plan.badge
+                  ? "bg-[#6B7280] text-white hover:bg-[#4B5563]"
                   : "bg-primary text-white hover:opacity-90"
               }`}
             >

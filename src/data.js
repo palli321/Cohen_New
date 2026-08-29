@@ -1095,56 +1095,68 @@ const Onlinecourcesdata2027 = [
 
   {
     id: 15,
-    // rd: "April 7, 2027",
-    // date: "May 18-21 OR 25-28, 2027",
+    rd: "June 3, 2027",
+    date: "August 03-06 OR 10-13, 2027",
     title: "CK 6488: Mortgage Loans Debt Collections and Revenue Management Procedures",
   },
    {
     id: 16,
-    // rd: " January 12, 2027",
-    // date: "March 3-6 OR 10-13, 2027",
-    title:
-      "CK 6486: Student Loans Debt Collections and Revenue Management Procedures",
+    rd: " June 3, 2027",
+    date: "August 17-20 OR 24-27, 2027",
+    title: "CK 6486: Student Loans Debt Collections and Revenue Management Procedures",
   },
   {
     id: 17,
-    // rd:"May 5, 2027",
-    // date:"June 2-5 OR 9-12, 2027",
+    rd:" August 3, 2027",
+    date:"September 7-10 OR 14-17, 2027",
     title:
       "CK 6396:	City and Government Municipalities Debt Collections and Revenue Management Procedures",
   },
 {
     id: 18,
-    // rd:"April 2, 2027",
-    // date:"July 7-10 OR 14-17, 2027",
+    rd:" August 3, 2027",
+    date:"September 21-24 OR 21-24, 2027",
     title:
       "CK 7050:	Hospital, and Healthcare Debt Collections and Revenue Management Procedures	",
   },
    {
     id: 19,
-    // rd: "July 2, 2027",
-    // date: "August 4-7 OR 11-14, 2027",
+    rd: "September 2, 2027",
+    date: "October 5-8 OR 12-15, 2027",
     title:
       "CK 7137:	Merchant Cash Advanced Debt Collections and Revenue Management Procedures",
   },
   {
     id: 20,
-    // rd: "August 4, 2027 ",
-    // date: "September 1-4 OR 8-11, 2027",
+    rd: "September 2, 2027 ",
+    date: "October 19-22 OR 26-29, 2027",
     title:"CK 7052:	Commercial and Residential Real Estate Debt Collections and Revenue Management Procedures",
   },
   {
     id: 21,
-    // rd: "August 4, 2027 ",
-    // date: "September 15-18 OR 22-25, 2027",
+    rd: "October 5, 2027 ",
+    date: "Nov 2-5 OR 9-12 OR 16-19 OR 23-26, 2027",
     title:"CK 6243: Government Treasury Revenue, Tax Compliance Collections Management Procedures.",
   },
   {
     id: 22,
-    // rd: "September 2, 2027 ",
-    // date: "October 6-9 OR 13-16, 2027",
+    rd: "November 2, 2027 ",
+    date: "November 30-3 Dec OR Dec 7-10, 2027",
     title:
       "CK 7138:	Hotels and Tourism Industry Debt Collections and Revenue Management Procedures",
+  },
+    {
+    id: 23,
+    rd: "October 5, 2027 ",
+    date: "November 2-5 Dec OR Nov 9-12, 2027",
+    title:
+      "CK 7135:	Debt Collections Strategies and Techniques for Banks and Other Financial Institutions.",
+  },
+     {
+    id: 24,
+    rd: "October 5, 2027",
+    date: "November 16-19 OR 23-26, 2027",
+    title: "CK 6343: Micro-Financing (MSME) Debt Collections and Revenue Management Procedures for Loans and Financial Institutions.",
   },
 
 ];
@@ -1733,7 +1745,7 @@ const Links = [
   { id: 4, name: "About Us", link: "/about" },
   { id: 5, name: "Contact Us", link: "/contact" },
   { id: 6, name: "History", link: "/history", pdf: CoursePdf.historypdf }, 
-  { id: 7, name: "Debt Collection Videos", link: "/video" },
+  { id: 7, name: "Debt Collection Videos Overview", link: "/video" },
 ];
 const CategoriesData = [
   {
