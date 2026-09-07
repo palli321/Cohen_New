@@ -76,7 +76,7 @@ const HomeVideo2 = () => {
        <br></br>
       <div className="mx-auto flex justify-center">
         <h2 className="text-primary 2xl:text-4xl lg:text-3xl sm:text-2xl text-xl text-center roboto-serif-font font-semibold mb-3">
-        Choose Your Online Debt Collection Video Training Subscription Plan
+        Who Should Subscribe to These On-line Debt Collection Video Training Courses
       </h2>
       </div>
 

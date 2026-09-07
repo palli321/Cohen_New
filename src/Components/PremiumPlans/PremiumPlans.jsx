@@ -55,9 +55,9 @@ const PremiumPlans = () => {
       </h2>
 
       <br></br>
-      <p className="text-center text-gray-500 max-w-[600px] mx-auto mb-12 sm:text-base text-sm">
-        Industry Subscription Prices
-      </p>
+     <p className="text-primary text-center 2xl:text-4xl lg:text-3xl sm:text-2xl text-xl text-blue-600 roboto-serif-font font-semibold mx-auto mb-12">
+  Industry Subscription Prices
+</p>
 
       <div className="flex flex-col lg:flex-row gap-8 justify-center items-stretch max-w-[1200px] mx-auto">
         {plans.map((plan) => (
