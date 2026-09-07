@@ -56,6 +56,14 @@ const OnlineCources = () => {
         
 
         {/* New section added at the end */}
+        
+        <div className="mx-auto flex justify-center">
+        <h2 className="text-primary 2xl:text-4xl lg:text-3xl sm:text-2xl text-xl text-center roboto-serif-font font-semibold mb-3">
+        Some of these courses have been conducted in partnership and collaboration with: Florida Atlantic University, Florida International University, Bermuda College, Barbados Community College, St. Lucia Airport & Seaport Authority as well as several regional governments and statutory institutions
+      </h2>
+      </div>
+
+
         <div className="flex xl:flex-row flex-col gap-10 md:px-15 justify-between items-start">
           <div className="flex flex-col justify-start">
             <div

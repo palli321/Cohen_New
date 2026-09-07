@@ -1908,7 +1908,7 @@ const seminarbannerData2 = [
   {
     id: "04.",
     heading: "Get Certified",
-    desc: "Earn a Certificate of Completion and continuing education credits from Florida Atlantic University.",
+    desc: "Earn a Certificate of Completion and continuing education credits.",
   },
 ];
 const aboutuscards = [

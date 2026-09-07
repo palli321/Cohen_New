@@ -71,11 +71,13 @@ const HomeVideo2 = () => {
   };
 
   return (
+   
     <div className="pt-9 padding-2xl lg:px-15 px-4 roboto">
+       <br></br>
       <div className="mx-auto flex justify-center">
-        {/* <h3 className="font-serif sm:text-[36px] text-xl text-center text-primary font-semibold">
-          Heading yaha likho
-        </h3> */}
+        <h2 className="text-primary 2xl:text-4xl lg:text-3xl sm:text-2xl text-xl text-center roboto-serif-font font-semibold mb-3">
+        Choose Your Online Debt Collection Video Training Subscription Plan
+      </h2>
       </div>
 
       <div className="py-[70px]">

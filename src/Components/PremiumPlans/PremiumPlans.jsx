@@ -55,10 +55,9 @@ const PremiumPlans = () => {
       </h2>
 
       <br></br>
-      {/* <p className="text-center text-gray-500 max-w-[600px] mx-auto mb-12 sm:text-base text-sm">
-        Pick the plan that fits your team's debt collection and revenue
-        management training needs.
-      </p> */}
+      <p className="text-center text-gray-500 max-w-[600px] mx-auto mb-12 sm:text-base text-sm">
+        Industry Subscription Prices
+      </p>
 
       <div className="flex flex-col lg:flex-row gap-8 justify-center items-stretch max-w-[1200px] mx-auto">
         {plans.map((plan) => (
