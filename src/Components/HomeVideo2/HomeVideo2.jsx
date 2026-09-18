@@ -49,7 +49,7 @@ const homeVideoData2 = [
     desc: "Turn “Not Right Now” Into a Payment “I do not have the money.” “Send me another bill.” “I will call you back.” Sound familiar? Stalls come with the job. The best collectors treat them as a chance, not a wall. In Video 7, Cohen and Klein Consulting shares simple ways to answer stalls and move the call toward a firm payment.",
   },
    {
-    id: 9,
+    id: 8,
     videoUrl: "https://www.youtube.com/embed/tSKSDZ--oS4",
     title: "A Full Step by Step Plan for Better Phone Collections",
     desc: "What Makes a Top Collector Different? Why do some collectors get average results while others beat every target? Like top athletes, the best collectors follow a plan, stay disciplined, and practice. In Video 8, Cohen and Klein Consulting puts every step together into one clear method for collecting more money on more accounts.",
@@ -85,9 +85,13 @@ const HomeVideo2 = () => {
           {homeVideoData2.map((video) => (
             <div
               key={video.id}
-              className="max-w-[350px] w-full rounded-lg overflow-hidden drop-shadow-[0_0_40px_rgba(1,61,123,0.1)] bg-white p-[20px] cursor-pointer"
+              className="relative max-w-[350px] w-full rounded-lg overflow-hidden drop-shadow-[0_0_40px_rgba(1,61,123,0.1)] bg-white p-[20px] cursor-pointer"
               onClick={() => handleOpen(video.videoUrl)}
             >
+              <div className="absolute top-2 left-2 z-10 w-9 h-9 rounded-full bg-primary text-white flex items-center justify-center text-sm font-semibold shadow-md">
+                {video.id}
+              </div>
+
               <div className="relative h-[200px] rounded-xl overflow-hidden">
                 <iframe
                   className="w-full h-full"
@@ -101,7 +105,7 @@ const HomeVideo2 = () => {
 
               <div className="pt-4 flex flex-col gap-3">
                 <h2 className="text-[18px] font-semibold text-primary">
-                  {video.title}
+                  Video {video.id}: {video.title}
                 </h2>
                 <p className="text-[#021326] text-sm">{video.desc}</p>
               </div>

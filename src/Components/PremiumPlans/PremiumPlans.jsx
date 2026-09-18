@@ -3,46 +3,74 @@ import React from "react";
 const plans = [
   {
     name: "Silver",
-    price: "$499",
-    duration: "/ year",
+    price: "Contact for Pricing",
+    duration: "",
+    employees: "Supports 1+5 Employees",
+    days: "Access to 5 Days of Training",
     accent: "#6B7280",
     badge: null,
     dark: false,
+    intro:
+      "Managers, Supervisors, Dept. Heads, HR Professionals, or Team Member(s), would be responsible to coordinate, register and pay for the participant(s) engagement.",
     features: [
-      "Access to 50+ recorded training courses",
-      "Monthly newsletter & updates",
-      "Email support",
-      "Certificate of completion",
+      "Access to 5 Days of Training",
+      "Access to 16 Comprehensive Videos",
+      "Self-registration",
+      "Payment Method: (Stripe or PayPal)",
+      "Enrollment tracking",
+      "Focus mode for learners",
+      "Brainstorming interactions",
+      "Certificate builder and achievements",
+      "Automated learner notification",
+      "Ratings, reviews and feedback",
     ],
   },
   {
     name: "Gold",
-    price: "$999",
-    duration: "/ year",
+    price: "Contact for Pricing",
+    duration: "",
+    employees: "Supports 1+10 Employees",
+    days: "Access to 10 Days of Training",
     accent: "#f8c67b",
     badge: "MOST POPULAR",
     dark: false,
+    intro:
+      "Managers, Supervisors, Dept. Heads, HR Professionals, or Team Member(s), would be responsible to coordinate, register and pay for the participant(s) engagement.",
     features: [
-      "Access to all 100+ training courses",
-      "Live monthly Q&A sessions",
-      "Priority email & phone support",
-      "Certificate of completion",
-      "1 free seminar seat per year",
+      "Access to 10 Days of Training",
+      "Access to 16 Comprehensive Videos",
+      "Self-registration",
+      "Payment Methods (Stripe, PayPal, etc.)",
+      "Enrollment tracking",
+      "Focus mode for learners",
+      "Brainstorming interactions",
+      "Certificate builder and achievements",
+      "Automated learner notification",
+      "Ratings, reviews and feedback",
     ],
   },
   {
     name: "Platinum",
-    price: "$1,999",
-    duration: "/ year",
+    price: "Contact for Pricing",
+    duration: "",
+    employees: "Supports 1+20 or more Employees",
+    days: "Access to 20 Days of Training",
     accent: "#f8c67b",
     badge: null,
     dark: true,
+    intro:
+      "Managers, Supervisors, Dept. Heads, HR Professionals, or Team Member(s), would be responsible to coordinate, register and pay for the participant(s) engagement.",
     features: [
-      "Everything in Gold, plus full course access",
-      "Unlimited live seminar access",
-      "1-on-1 consulting session (2 hrs)",
-      "Dedicated account manager",
-      "Custom in-house training options",
+      "Access to 20 Days of Training",
+      "Access to 16 Comprehensive Videos",
+      "Self-registration",
+      "Payment Methods (Stripe, PayPal, etc.)",
+      "Enrollment tracking",
+      "Focus mode for learners",
+      "Brainstorming interactions",
+      "Certificate builder and achievements",
+      "Automated learner notification",
+      "Ratings, reviews and feedback",
     ],
   },
 ];
@@ -51,13 +79,13 @@ const PremiumPlans = () => {
   return (
     <div className="py-[60px] px-4 lg:px-15 roboto">
       <h2 className="text-primary 2xl:text-4xl lg:text-3xl sm:text-2xl text-xl text-center roboto-serif-font font-semibold mb-3">
-        Choose Your Online Debt Collection Video Training Subscription Plan
+        Choose Your Online Debt Collection and Revenue Management Video Training Subscription Plan
       </h2>
 
       <br></br>
-     <p className="text-primary text-center 2xl:text-4xl lg:text-3xl sm:text-2xl text-xl text-blue-600 roboto-serif-font font-semibold mx-auto mb-12">
-  Industry Subscription Prices
-</p>
+      <p className="text-primary text-center 2xl:text-4xl lg:text-3xl sm:text-2xl text-xl text-blue-600 roboto-serif-font font-semibold mx-auto mb-12">
+        Introductory Subscription Plans
+      </p>
 
       <div className="flex flex-col lg:flex-row gap-8 justify-center items-stretch max-w-[1200px] mx-auto">
         {plans.map((plan) => (
@@ -90,22 +118,40 @@ const PremiumPlans = () => {
               {plan.name}
             </h3>
 
-            <div className="text-center mb-6">
+            <p
+              className={`text-center text-sm font-medium mb-4 ${
+                plan.dark ? "text-gray-200" : "text-gray-500"
+              }`}
+            >
+              {plan.employees}
+            </p>
+
+            <div className="text-center mb-4">
               <span
-                className={`text-4xl font-bold roboto-serif-font ${
+                className={`text-2xl font-bold roboto-serif-font ${
                   plan.dark ? "text-white" : "text-primary"
                 }`}
               >
                 {plan.price}
               </span>
-              <span
-                className={`text-sm ml-1 ${
-                  plan.dark ? "text-gray-300" : "text-gray-400"
-                }`}
-              >
-                {plan.duration}
-              </span>
+              {plan.duration && (
+                <span
+                  className={`text-sm ml-1 ${
+                    plan.dark ? "text-gray-300" : "text-gray-400"
+                  }`}
+                >
+                  {plan.duration}
+                </span>
+              )}
             </div>
+
+            <p
+              className={`text-xs text-center mb-6 leading-relaxed ${
+                plan.dark ? "text-gray-200" : "text-gray-500"
+              }`}
+            >
+              {plan.intro}
+            </p>
 
             <ul className="flex flex-col gap-3 mb-8 flex-1">
               {plan.features.map((feature, i) => (
@@ -140,6 +186,20 @@ const PremiumPlans = () => {
           </div>
         ))}
       </div>
+
+      <p className="text-center text-sm text-gray-500 max-w-[800px] mx-auto mt-10 leading-relaxed">
+        This is a self-managed system where an assigned member (see roles above) will enroll
+        the participant(s) and make the required payment. At the end of the training program
+        each enrollee must print his/her certificate of completion.
+        <br />
+        Questions or concerns: please contact{" "}
+        <a
+          href="mailto:training@cohenandklein.com"
+          className="text-blue-600 font-medium underline"
+        >
+          training@cohenandklein.com
+        </a>
+      </p>
     </div>
   );
 };

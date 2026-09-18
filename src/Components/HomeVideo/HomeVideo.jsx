@@ -43,6 +43,36 @@ const homeVideoData = [
     title: "St. Kitts Electricity Company (SKELEC) Testimonials: CK 700A Training",
     // desc: "Description yaha likho",
   },
+  {
+    id: 8,
+    videoUrl: "https://www.youtube.com/embed/0b9kcS0puq4",
+    title: "St. Kitts Electricity Company (SKELEC) Testimonials: CK 700A Training",
+    // desc: "Description yaha likho",
+  },
+  {
+    id: 9,
+    videoUrl: "https://www.youtube.com/embed/c6Z0p9FfRfg",
+    title: "St. Kitts Electricity Company (SKELEC) Testimonials: CK 700A Training",
+    // desc: "Description yaha likho",
+  },
+  {
+    id: 10,
+    videoUrl: "https://www.youtube.com/embed/YuC3nP6_ZIw",
+    title: "St. Kitts Electricity Company (SKELEC) Testimonials: CK 700A Training",
+    // desc: "Description yaha likho",
+  },
+  {
+    id: 11,
+    videoUrl: "https://www.youtube.com/embed/s5teBTmoJBo",
+    title: "St. Kitts Electricity Company (SKELEC) Testimonials: CK 700A Training",
+    // desc: "Description yaha likho",
+  },
+  {
+    id: 12,
+    videoUrl: "https://www.youtube.com/embed/fvVrwGcbQbI",
+    title: "St. Kitts Electricity Company (SKELEC) Testimonials: CK 700A Training",
+    // desc: "Description yaha likho",
+  },
 ];
 
 const HomeVideo = () => {
@@ -72,9 +102,13 @@ const HomeVideo = () => {
           {homeVideoData.map((video) => (
             <div
               key={video.id}
-              className="max-w-[350px] w-full rounded-lg overflow-hidden drop-shadow-[0_0_40px_rgba(1,61,123,0.1)] bg-white p-[20px] cursor-pointer"
+              className="relative max-w-[350px] w-full rounded-lg overflow-hidden drop-shadow-[0_0_40px_rgba(1,61,123,0.1)] bg-white p-[20px] cursor-pointer"
               onClick={() => handleOpen(video.videoUrl)}
             >
+              <div className="absolute top-2 left-2 z-10 w-9 h-9 rounded-full bg-primary text-white flex items-center justify-center text-sm font-semibold shadow-md">
+                {video.id}
+              </div>
+
               <div className="relative h-[200px] rounded-xl overflow-hidden">
                 <iframe
                   className="w-full h-full"
