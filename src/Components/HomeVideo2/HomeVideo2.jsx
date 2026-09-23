@@ -2,6 +2,12 @@ import React, { useState } from "react";
 
 const homeVideoData2 = [
   {
+    id: 0,
+    videoUrl: "https://www.youtube.com/embed/24kRhiGMLpg",
+    title: "How to Use Your Phone Voice to Be a Better Debt Collector or Support Agent",
+    desc: "Your Voice Is Your Best Tool on the Phone On the phone, how you say something matters as much as what you say. Your voice builds trust. It shows you know your job. It helps you connect with people. In Video 1, Cohen and Klein Consulting shows debt collectors, customer service reps, and back office staff how to use their voice to get better results.",
+  },
+  {
     id: 1,
     videoUrl: "https://www.youtube.com/embed/XAiqxhOIOLE",
     title: "How to Use Your Phone Voice to Be a Better Debt Collector or Support Agent",
@@ -54,6 +60,47 @@ const homeVideoData2 = [
     title: "A Full Step by Step Plan for Better Phone Collections",
     desc: "What Makes a Top Collector Different? Why do some collectors get average results while others beat every target? Like top athletes, the best collectors follow a plan, stay disciplined, and practice. In Video 8, Cohen and Klein Consulting puts every step together into one clear method for collecting more money on more accounts.",
   },
+   {
+    id: 9,
+    videoUrl: "https://www.youtube.com/embed/I4dU-B7BStA",
+    title: "A Full Step by Step Plan for Better Phone Collections",
+    desc: "What Makes a Top Collector Different? Why do some collectors get average results while others beat every target? Like top athletes, the best collectors follow a plan, stay disciplined, and practice. In Video 8, Cohen and Klein Consulting puts every step together into one clear method for collecting more money on more accounts.",
+  },
+   {
+    id: 10,
+    videoUrl: "https://www.youtube.com/embed/ypzqCUQIees",
+    title: "A Full Step by Step Plan for Better Phone Collections",
+    desc: "What Makes a Top Collector Different? Why do some collectors get average results while others beat every target? Like top athletes, the best collectors follow a plan, stay disciplined, and practice. In Video 8, Cohen and Klein Consulting puts every step together into one clear method for collecting more money on more accounts.",
+  },
+   {
+    id: 11,
+    videoUrl: "https://www.youtube.com/embed/fCbs2M6oaNg",
+    title: "A Full Step by Step Plan for Better Phone Collections",
+    desc: "What Makes a Top Collector Different? Why do some collectors get average results while others beat every target? Like top athletes, the best collectors follow a plan, stay disciplined, and practice. In Video 8, Cohen and Klein Consulting puts every step together into one clear method for collecting more money on more accounts.",
+  },
+   {
+    id: 12,
+    videoUrl: "https://www.youtube.com/embed/1PHOfETusOk",
+    title: "A Full Step by Step Plan for Better Phone Collections",
+    desc: "What Makes a Top Collector Different? Why do some collectors get average results while others beat every target? Like top athletes, the best collectors follow a plan, stay disciplined, and practice. In Video 8, Cohen and Klein Consulting puts every step together into one clear method for collecting more money on more accounts.",
+  },
+   {
+    id: 13,
+    videoUrl: "https://www.youtube.com/embed/wJ__Pj41SPo",
+    title: "A Full Step by Step Plan for Better Phone Collections",
+    desc: "What Makes a Top Collector Different? Why do some collectors get average results while others beat every target? Like top athletes, the best collectors follow a plan, stay disciplined, and practice. In Video 8, Cohen and Klein Consulting puts every step together into one clear method for collecting more money on more accounts.",
+  },
+   {
+    id: 14,
+    videoUrl: "https://www.youtube.com/embed/bP8NflflhaQ",
+    title: "A Full Step by Step Plan for Better Phone Collections",
+    desc: "What Makes a Top Collector Different? Why do some collectors get average results while others beat every target? Like top athletes, the best collectors follow a plan, stay disciplined, and practice. In Video 8, Cohen and Klein Consulting puts every step together into one clear method for collecting more money on more accounts.",
+  }, {
+    id: 15,
+    videoUrl: "https://www.youtube.com/embed/X_wZ80dBfUg",
+    title: "A Full Step by Step Plan for Better Phone Collections",
+    desc: "What Makes a Top Collector Different? Why do some collectors get average results while others beat every target? Like top athletes, the best collectors follow a plan, stay disciplined, and practice. In Video 8, Cohen and Klein Consulting puts every step together into one clear method for collecting more money on more accounts.",
+  },
 ];
 
 const HomeVideo2 = () => {
@@ -76,7 +123,7 @@ const HomeVideo2 = () => {
        <br></br>
       <div className="mx-auto flex justify-center">
         <h2 className="text-primary 2xl:text-4xl lg:text-3xl sm:text-2xl text-xl text-center roboto-serif-font font-semibold mb-3">
-        Who Should Subscribe to These On-line Debt Collection Video Training Courses
+        Who Should Subscribe To These On-Line Debt Collection & Revenue Management Video Training Courses
       </h2>
       </div>
 
@@ -88,9 +135,18 @@ const HomeVideo2 = () => {
               className="relative max-w-[350px] w-full rounded-lg overflow-hidden drop-shadow-[0_0_40px_rgba(1,61,123,0.1)] bg-white p-[20px] cursor-pointer"
               onClick={() => handleOpen(video.videoUrl)}
             >
-              <div className="absolute top-2 left-2 z-10 w-9 h-9 rounded-full bg-primary text-white flex items-center justify-center text-sm font-semibold shadow-md">
-                {video.id}
-              </div>
+              {video.id === 0 ? (
+                <div
+                  className="absolute top-2 left-2 z-10 px-3 h-9 rounded-full text-white flex items-center justify-center text-sm font-semibold shadow-md"
+                  style={{ backgroundColor: "#D4AF37" }}
+                >
+                  Introduction
+                </div>
+              ) : (
+                <div className="absolute top-2 left-2 z-10 w-9 h-9 rounded-full bg-primary text-white flex items-center justify-center text-sm font-semibold shadow-md">
+                  {video.id}
+                </div>
+              )}
 
               <div className="relative h-[200px] rounded-xl overflow-hidden">
                 <iframe
@@ -104,9 +160,15 @@ const HomeVideo2 = () => {
               </div>
 
               <div className="pt-4 flex flex-col gap-3">
-                <h2 className="text-[18px] font-semibold text-primary">
-                  Video {video.id}: {video.title}
-                </h2>
+                {video.id === 0 ? (
+                  <h2 className="text-[18px] font-semibold text-primary">
+                    Comprehensive Consumer & Commercial Debt Collections Training
+                  </h2>
+                ) : (
+                  <h2 className="text-[18px] font-semibold text-primary">
+                    Video {video.id}: {video.title}
+                  </h2>
+                )}
                 <p className="text-[#021326] text-sm">{video.desc}</p>
               </div>
             </div>
