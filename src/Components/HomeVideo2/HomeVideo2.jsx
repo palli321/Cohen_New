@@ -106,6 +106,7 @@ const homeVideoData2 = [
 const HomeVideo2 = () => {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
   const [selectedVideo, setSelectedVideo] = useState("");
+  const [showAllVideos, setShowAllVideos] = useState(false);
 
   const handleOpen = (url) => {
     setSelectedVideo(url);
@@ -116,6 +117,10 @@ const HomeVideo2 = () => {
     setIsPopupOpen(false);
     setSelectedVideo("");
   };
+
+  const videosToShow = showAllVideos
+    ? homeVideoData2
+    : homeVideoData2.slice(0, 8);
 
   return (
    
@@ -129,7 +134,7 @@ const HomeVideo2 = () => {
 
       <div className="py-[70px]">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 justify-center">
-          {homeVideoData2.map((video) => (
+          {videosToShow.map((video) => (
             <div
               key={video.id}
               className="relative max-w-[350px] w-full rounded-lg overflow-hidden drop-shadow-[0_0_40px_rgba(1,61,123,0.1)] bg-white p-[20px] cursor-pointer"
@@ -174,6 +179,17 @@ const HomeVideo2 = () => {
             </div>
           ))}
         </div>
+
+        {!showAllVideos && homeVideoData2.length > 8 && (
+          <div className="flex justify-center mt-10">
+            <button
+              onClick={() => setShowAllVideos(true)}
+              className="bg-primary text-white px-8 py-3 rounded-full text-sm sm:text-base font-semibold shadow-md hover:opacity-90 transition"
+            >
+              Load More Videos
+            </button>
+          </div>
+        )}
 
         {isPopupOpen && (
           <div
