@@ -103,10 +103,10 @@ const PremiumPlans = () => {
             key={plan.name}
             className={`relative flex flex-col flex-1 rounded-[16px] p-8 transition-transform duration-300 hover:-translate-y-2 ${
               plan.dark
-                ? "bg-primary text-white shadow-[0_8px_50px_rgba(1,61,123,0.35)]"
+                ? "bg-primary text-white border-[3px] border-primary shadow-[0_8px_50px_rgba(1,61,123,0.35)]"
                 : plan.badge
-                ? "z-10 bg-white shadow-[0_10px_60px_rgba(248,198,123,0.45)] border-[3px] border-[#f8c67b] lg:scale-110"
-                : "z-[5] bg-white shadow-[0_8px_50px_rgba(107,114,128,0.25)] border-[3px] border-[#9CA3AF] lg:scale-105"
+                ? "bg-white shadow-[0_10px_60px_rgba(248,198,123,0.45)] border-[3px] border-[#f8c67b]"
+                : "bg-white shadow-[0_8px_50px_rgba(107,114,128,0.25)] border-[3px] border-[#9CA3AF]"
             }`}
           >
             {plan.badge && (
@@ -186,9 +186,7 @@ const PremiumPlans = () => {
               className={`w-full py-[12px] rounded-[8px] font-semibold roboto-serif-font transition-colors cursor-pointer ${
                 plan.dark || plan.badge
                   ? "bg-[#f8c67b] text-white hover:bg-[#e5ac52]"
-                  : !plan.dark && !plan.badge
-                  ? "bg-[#6B7280] text-white hover:bg-[#4B5563]"
-                  : "bg-primary text-white hover:opacity-90"
+                  : "bg-[#6B7280] text-white hover:bg-[#4B5563]"
               }`}
             >
               Choose {plan.name}

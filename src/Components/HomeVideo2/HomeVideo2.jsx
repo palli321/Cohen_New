@@ -140,7 +140,7 @@ const HomeVideo2 = () => {
 
       {/* Teen questions - horizontal, alag alag color */}
       <div className="mt-4 flex flex-col lg:flex-row items-center justify-center gap-3 lg:gap-10 text-center">
-        <p className="text-base sm:text-lg font-semibold text-[#D4AF37]">
+        <p className="text-base sm:text-lg font-semibold text-[#27A957]">
           Are you in a position to achieve your revenue targets?
         </p>
         <p className="text-base sm:text-lg font-semibold text-[#E53935]">
