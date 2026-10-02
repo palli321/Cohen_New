@@ -46,31 +46,31 @@ const homeVideoData = [
   {
     id: 8,
     videoUrl: "https://www.youtube.com/embed/0b9kcS0puq4",
-    title: "St. Kitts Electricity Company (SKELEC) Testimonials: CK 700A Training",
+    title: "Debt Collection & Revenue Management | Bermuda Social Insurance & Barbados NIS",
     // desc: "Description yaha likho",
   },
   {
     id: 9,
     videoUrl: "https://www.youtube.com/embed/c6Z0p9FfRfg",
-    title: "St. Kitts Electricity Company (SKELEC) Testimonials: CK 700A Training",
+    title: "Debt Collection & Revenue Management | FLOW Antigua & St. Kitts Inland Revenue",
     // desc: "Description yaha likho",
   },
   {
     id: 10,
     videoUrl: "https://www.youtube.com/embed/YuC3nP6_ZIw",
-    title: "St. Kitts Electricity Company (SKELEC) Testimonials: CK 700A Training",
+    title: "⁠Debt Collection & Revenue Management | Barbados NIS & Fidelity Bank Bahamas",
     // desc: "Description yaha likho",
   },
   {
     id: 11,
     videoUrl: "https://www.youtube.com/embed/s5teBTmoJBo",
-    title: "St. Kitts Electricity Company (SKELEC) Testimonials: CK 700A Training",
+    title: "Client Testimonials | Social Security Board, Simpson Motors & Jamaica Public Service",
     // desc: "Description yaha likho",
   },
   {
     id: 12,
     videoUrl: "https://www.youtube.com/embed/fvVrwGcbQbI",
-    title: "St. Kitts Electricity Company (SKELEC) Testimonials: CK 700A Training",
+    title: "Client Testimonials | Antigua Commercial Bank, Princess Juliana Airport & Bahamas Water",
     // desc: "Description yaha likho",
   },
 ];
@@ -93,7 +93,7 @@ const HomeVideo = () => {
     <div className="pt-9 padding-2xl lg:px-15 px-4 roboto">
       <div className="mx-auto flex justify-center">
         <h3 className="font-serif sm:text-[36px] text-xl text-center text-primary font-semibold">
-          Some Additional Debt Collections & Revenue Management Training Testimonials With Proven Results
+          Some Additional Debt Collections & Revenue Management Training Testimonials With Proven Results - Because of trust and Excellence
         </h3>
       </div>
 

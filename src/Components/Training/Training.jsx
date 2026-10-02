@@ -45,7 +45,7 @@ const Training = () => {
       <div className="roboto 2xl:px-37.5 lg:px-15 px-4">
         <div className="flex flex-col sm:pt-[40px] justify-between sm:gap-0 gap-2">
           <h2 className="text-primary mx-auto md:text-[32px] sm:text-2xl text-xl font-semibold  roboto-serif-font pr-[20px]">
-            Some Frequently Requested Training Courses.
+            Some Frequently Requested Training Courses - Because of trust and Excellence
           </h2>
           <p className="roboto-serif-font font-bold sm:text-[21px] text-xs text-secondary pt-[10px] flex justify-center">
             In-house and virtual training can be arranged for the following courses

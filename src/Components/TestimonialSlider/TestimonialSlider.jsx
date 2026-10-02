@@ -64,7 +64,7 @@ const TestimonialSlider = () => {
       <div className="mx-auto flex justify-center mb-[54px]">
         <div>
           <h3 onClick={handletestimonial} className="roboto-serif-font cursor-pointer md:text-[32px] sm:text-2xl text-xl text-center text-primary font-semibold">
-            1500+ Positive Testimonials With Proven Results
+            1500+ Positive Testimonials With Proven Results - Because of trust and Excellence
           </h3>
           <p className="roboto-serif-font font-bold sm:text-[21px] text-xs text-secondary pt-[10px] flex justify-center">
             in different locations

@@ -26,7 +26,7 @@ const Home = () => {
       
        <OnlineCources/>
        <HomeVideo />
-       <Partner heading="Some Previous Partnerships, Collaborations and Training Assignments Conducted" className="py-[30px] pb-[100px]" className2="pt-15" />
+       <Partner heading="Some Previous Partnerships, Collaborations and Training Assignments Conducted - Because of trust and Excellence" className="py-[30px] pb-[100px]" className2="pt-15" />
       <Training />
       <TestimonialSlider /> 
       <Cources />

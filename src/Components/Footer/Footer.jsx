@@ -77,7 +77,7 @@ const Footer = () => {
                       alt="Telephone"
                       className="w-5 h-5"
                     />{" "}
-                    954-731-6606
+                    954-731-6606 - Mail Distribution centre
                   </a>
                 </div>
               </div>

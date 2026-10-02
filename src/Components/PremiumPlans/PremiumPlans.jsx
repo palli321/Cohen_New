@@ -13,10 +13,10 @@ const plans = [
     intro:
       "Managers, Supervisors, Dept. Heads, HR Professionals, or Team Member(s), would be responsible to coordinate, register and pay for the participant(s) engagement.",
     features: [
-      "Access to 5 Days of Training",
+      "Access to 18 Calendar Days of Training",
       "Access to 16 Comprehensive Videos",
       "Self-registration",
-      "Payment Method: (Stripe or PayPal)",
+      "Payment Method: (PayPal)",
       "Enrollment tracking",
       "Focus mode for learners",
       "Brainstorming interactions",
@@ -37,10 +37,10 @@ const plans = [
     intro:
       "Managers, Supervisors, Dept. Heads, HR Professionals, or Team Member(s), would be responsible to coordinate, register and pay for the participant(s) engagement.",
     features: [
-      "Access to 10 Days of Training",
+      "Access to 24 Calendar Days of Training",
       "Access to 16 Comprehensive Videos",
       "Self-registration",
-      "Payment Methods (Stripe, PayPal, etc.)",
+      "Payment Methods (PayPal)",
       "Enrollment tracking",
       "Focus mode for learners",
       "Brainstorming interactions",
@@ -61,10 +61,10 @@ const plans = [
     intro:
       "Managers, Supervisors, Dept. Heads, HR Professionals, or Team Member(s), would be responsible to coordinate, register and pay for the participant(s) engagement.",
     features: [
-      "Access to 20 Days of Training",
+      "Access to 45 Calendar Days of Training",
       "Access to 16 Comprehensive Videos",
       "Self-registration",
-      "Payment Methods (Stripe, PayPal, etc.)",
+      "Payment Methods (PayPal)",
       "Enrollment tracking",
       "Focus mode for learners",
       "Brainstorming interactions",
@@ -78,13 +78,23 @@ const plans = [
 const PremiumPlans = () => {
   return (
     <div className="py-[60px] px-4 lg:px-15 roboto">
+      {/* Nayi headings - horizontal, chhoti size (teen lines ke barabar) */}
+      <div className="flex flex-row flex-wrap items-center justify-center gap-x-10 gap-y-2 mb-4 text-center">
+        <h3 className="text-base sm:text-lg font-semibold text-[#16A34A]">
+          Comprehensive Innovative
+        </h3>
+        <h3 className="text-base sm:text-lg font-semibold text-[#DC2626]">
+          Practical Realistic
+        </h3>
+      </div>
+
       <h2 className="text-primary 2xl:text-4xl lg:text-3xl sm:text-2xl text-xl text-center roboto-serif-font font-semibold mb-3">
         Choose Your Online Debt Collection and Revenue Management Video Training Subscription Plan
       </h2>
 
       <br></br>
       <p className="text-primary text-center 2xl:text-4xl lg:text-3xl sm:text-2xl text-xl text-blue-600 roboto-serif-font font-semibold mx-auto mb-12">
-        Introductory Subscription Plans
+        Introductory Subscription Prices
       </p>
 
       <div className="flex flex-col lg:flex-row gap-8 justify-center items-stretch max-w-[1200px] mx-auto">

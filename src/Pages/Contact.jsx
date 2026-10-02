@@ -302,7 +302,7 @@ const handleSubmit = async (e) => {
               <span>8362 Pines Boulevard,</span>
               <span>Pembroke Pines, FL 33024</span>
               <span>Telephone: 954-731-6340</span>
-              <span>Fax: 954-731-6606</span>
+              <span>Fax: 954-731-6606 - Mail Distribution centre</span>
             </div>
           </div>
           <div className="flex justify-center flex-col items-center gap-2 bg-[#E9FFF9] py-10 rounded-md">

@@ -1,10 +1,11 @@
 import React, { useState } from "react";
+import CoursePdf from "../../assets/CourcesPDF/Who should Attend This Course.pdf";
 
 const homeVideoData2 = [
   {
     id: 0,
     videoUrl: "https://www.youtube.com/embed/24kRhiGMLpg",
-    title: "How to Use Your Phone Voice to Be a Better Debt Collector or Support Agent",
+    title: "Debt Collection Strategies & Techniques | Complete Training",
     desc: "Your Voice Is Your Best Tool on the Phone On the phone, how you say something matters as much as what you say. Your voice builds trust. It shows you know your job. It helps you connect with people. In Video 1, Cohen and Klein Consulting shows debt collectors, customer service reps, and back office staff how to use their voice to get better results.",
   },
   {
@@ -13,35 +14,30 @@ const homeVideoData2 = [
     title: "How to Use Your Phone Voice to Be a Better Debt Collector or Support Agent",
     desc: "Your Voice Is Your Best Tool on the Phone On the phone, how you say something matters as much as what you say. Your voice builds trust. It shows you know your job. It helps you connect with people. In Video 1, Cohen and Klein Consulting shows debt collectors, customer service reps, and back office staff how to use their voice to get better results.",
   },
-
-   {
+  {
     id: 2,
     videoUrl: "https://www.youtube.com/embed/2CSrG5ApUiY",
     title: "How to Listen Well on Consumer and Business Debt Collection Calls",
     desc: "Good Listening Brings In More MoneyGood collection work is not about talking over people. It is about listening closely. In Video 2, Cohen and Klein Consulting shows how careful listening helps you read the person, hear the real problem, and guide the call to an answer that works for both sides.",
   },
-
-   {
+  {
     id: 3,
     videoUrl: "https://www.youtube.com/embed/0ancoJyxb3o",
     title: "Talking Mistakes That Can Hurt a Debt Collection Call",
     desc: "Common Mistakes on Collection Calls, and How to Avoid ThemOne wrong move on a call can lead to mix ups, late payments, or broken promises. In Video 3, Cohen and Klein Consulting looks at real mistakes people make, so your collectors know what to avoid and keep every call clear.",
   },
-
   {
     id: 4,
     videoUrl: "https://www.youtube.com/embed/sNXzZo6pV8M",
     title: "Handling Strong Feelings on Debt Collection Calls",
     desc: "Staying Calm on Hard Calls and Protecting Your Good NameCollection calls can be stressful. People get worried, upset, or angry. The way your team handles those moments affects both how much you collect and how people see your company. In Video 4, Cohen and Klein Consulting shares simple ways to handle strong feelings in a calm, fair, and professional way.",
   },
-
-   {
+  {
     id: 5,
     videoUrl: "https://www.youtube.com/embed/GmLmN-edUBI",
     title: "Planning the Call and Opening It the Right Way for Better Collection Results",
     desc: "The First 15 Seconds Decide the Whole CallThe first 15 seconds of a collection call set the tone for everything that follows. With no plan, calls go off track fast. In Video 5, Cohen and Klein Consulting shows how to get ready before you dial and how to open the call so you reach the right person and stay in control.",
   },
-
   {
     id: 6,
     videoUrl: "https://www.youtube.com/embed/B2snpSTRwLI",
@@ -54,51 +50,52 @@ const homeVideoData2 = [
     title: "Handling Stalls and Excuses So You Can Close the Call",
     desc: "Turn “Not Right Now” Into a Payment “I do not have the money.” “Send me another bill.” “I will call you back.” Sound familiar? Stalls come with the job. The best collectors treat them as a chance, not a wall. In Video 7, Cohen and Klein Consulting shares simple ways to answer stalls and move the call toward a firm payment.",
   },
-   {
+  {
     id: 8,
     videoUrl: "https://www.youtube.com/embed/tSKSDZ--oS4",
     title: "A Full Step by Step Plan for Better Phone Collections",
     desc: "What Makes a Top Collector Different? Why do some collectors get average results while others beat every target? Like top athletes, the best collectors follow a plan, stay disciplined, and practice. In Video 8, Cohen and Klein Consulting puts every step together into one clear method for collecting more money on more accounts.",
   },
-   {
+  {
     id: 9,
     videoUrl: "https://www.youtube.com/embed/I4dU-B7BStA",
-    title: "A Full Step by Step Plan for Better Phone Collections",
+    title: "Debt Collection Negotiation Techniques | Collector Training",
     desc: "What Makes a Top Collector Different? Why do some collectors get average results while others beat every target? Like top athletes, the best collectors follow a plan, stay disciplined, and practice. In Video 8, Cohen and Klein Consulting puts every step together into one clear method for collecting more money on more accounts.",
   },
-   {
+  {
     id: 10,
     videoUrl: "https://www.youtube.com/embed/ypzqCUQIees",
-    title: "A Full Step by Step Plan for Better Phone Collections",
+    title: "Debt Collection Customer Service Procedures",
     desc: "What Makes a Top Collector Different? Why do some collectors get average results while others beat every target? Like top athletes, the best collectors follow a plan, stay disciplined, and practice. In Video 8, Cohen and Klein Consulting puts every step together into one clear method for collecting more money on more accounts.",
   },
-   {
+  {
     id: 11,
     videoUrl: "https://www.youtube.com/embed/fCbs2M6oaNg",
-    title: "A Full Step by Step Plan for Better Phone Collections",
+    title: "Debt Collection Customer Service Strategies",
     desc: "What Makes a Top Collector Different? Why do some collectors get average results while others beat every target? Like top athletes, the best collectors follow a plan, stay disciplined, and practice. In Video 8, Cohen and Klein Consulting puts every step together into one clear method for collecting more money on more accounts.",
   },
-   {
+  {
     id: 12,
     videoUrl: "https://www.youtube.com/embed/1PHOfETusOk",
-    title: "A Full Step by Step Plan for Better Phone Collections",
+    title: "Debt Collection Communication Management | Training",
     desc: "What Makes a Top Collector Different? Why do some collectors get average results while others beat every target? Like top athletes, the best collectors follow a plan, stay disciplined, and practice. In Video 8, Cohen and Klein Consulting puts every step together into one clear method for collecting more money on more accounts.",
   },
-   {
+  {
     id: 13,
     videoUrl: "https://www.youtube.com/embed/wJ__Pj41SPo",
-    title: "A Full Step by Step Plan for Better Phone Collections",
+    title: "Effective Debt Collection Communication Techniques",
     desc: "What Makes a Top Collector Different? Why do some collectors get average results while others beat every target? Like top athletes, the best collectors follow a plan, stay disciplined, and practice. In Video 8, Cohen and Klein Consulting puts every step together into one clear method for collecting more money on more accounts.",
   },
-   {
+  {
     id: 14,
     videoUrl: "https://www.youtube.com/embed/bP8NflflhaQ",
-    title: "A Full Step by Step Plan for Better Phone Collections",
+    title: "Debt Collection Skip-Tracing Strategies & Techniques",
     desc: "What Makes a Top Collector Different? Why do some collectors get average results while others beat every target? Like top athletes, the best collectors follow a plan, stay disciplined, and practice. In Video 8, Cohen and Klein Consulting puts every step together into one clear method for collecting more money on more accounts.",
-  }, {
+  },
+  {
     id: 15,
     videoUrl: "https://www.youtube.com/embed/X_wZ80dBfUg",
-    title: "A Full Step by Step Plan for Better Phone Collections",
+    title: "U.S. Debt Collection Rules & Regulations | Basic Guide",
     desc: "What Makes a Top Collector Different? Why do some collectors get average results while others beat every target? Like top athletes, the best collectors follow a plan, stay disciplined, and practice. In Video 8, Cohen and Klein Consulting puts every step together into one clear method for collecting more money on more accounts.",
   },
 ];
@@ -123,16 +120,39 @@ const HomeVideo2 = () => {
     : homeVideoData2.slice(0, 8);
 
   return (
-   
     <div className="pt-9 padding-2xl lg:px-15 px-4 roboto">
-       <br></br>
+      <br />
+
+      {/* Heading - click pe PDF khulegi, underline nahi */}
       <div className="mx-auto flex justify-center">
         <h2 className="text-primary 2xl:text-4xl lg:text-3xl sm:text-2xl text-xl text-center roboto-serif-font font-semibold mb-3">
-        Who Should Subscribe To These On-Line Debt Collection & Revenue Management Video Training Courses
-      </h2>
+          <a
+            href={CoursePdf}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="no-underline hover:no-underline cursor-pointer"
+          >
+            Who Should Subscribe To These On-Line Debt Collection & Revenue
+            Management Video Training Courses
+          </a>
+        </h2>
       </div>
 
-      <div className="py-[70px]">
+      {/* Teen questions - horizontal, alag alag color */}
+      <div className="mt-4 flex flex-col lg:flex-row items-center justify-center gap-3 lg:gap-10 text-center">
+        <p className="text-base sm:text-lg font-semibold text-[#D4AF37]">
+          Are you in a position to achieve your revenue targets?
+        </p>
+        <p className="text-base sm:text-lg font-semibold text-[#E53935]">
+          Do you know how to achieve your revenue targets?
+        </p>
+        <p className="text-base sm:text-lg font-semibold text-[#1E88E5]">
+          Do you know how to reduce your delinquent accounts?
+        </p>
+      </div>
+
+      {/* Gap kam: pt-8 pb-[70px] */}
+      <div className="pt-8 pb-[70px]">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 justify-center">
           {videosToShow.map((video) => (
             <div
@@ -167,7 +187,7 @@ const HomeVideo2 = () => {
               <div className="pt-4 flex flex-col gap-3">
                 {video.id === 0 ? (
                   <h2 className="text-[18px] font-semibold text-primary">
-                    Comprehensive Consumer & Commercial Debt Collections Training
+                   Debt Collection Strategies & Techniques | Complete Training
                   </h2>
                 ) : (
                   <h2 className="text-[18px] font-semibold text-primary">
