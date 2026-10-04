@@ -75,20 +75,31 @@ const plans = [
   },
 ];
 
+// Charo words alag alag, har ek ka apna color
+const highlightWords = [
+  { text: "Comprehensive", color: "#16A34A" }, // green
+  { text: "Innovative", color: "#1E88E5" },    // blue
+  { text: "Practical", color: "#DC2626" },     // red
+  { text: "Realistic", color: "#7C3AED" },     // purple
+];
+
 const PremiumPlans = () => {
   return (
     <div className="py-[60px] px-4 lg:px-15 roboto">
-      {/* Nayi headings - horizontal, chhoti size (teen lines ke barabar) */}
-      <div className="flex flex-row flex-wrap items-center justify-center gap-x-10 gap-y-2 mb-4 text-center">
-        <h3 className="text-base sm:text-lg font-semibold text-[#16A34A]">
-          Comprehensive Innovative
-        </h3>
-        <h3 className="text-base sm:text-lg font-semibold text-[#DC2626]">
-          Practical Realistic
-        </h3>
+      {/* Charo words alag alag, zyada gap, thoda bada font */}
+      <div className="flex flex-row flex-wrap items-center justify-center gap-x-10 md:gap-x-20 lg:gap-x-42 gap-y-2 mb-4 text-center">
+        {highlightWords.map((word) => (
+          <h3
+            key={word.text}
+            className="text-2xl sm:text-3xl lg:text-2xl font-semibold"
+            style={{ color: word.color }}
+          >
+            {word.text}
+          </h3>
+        ))}
       </div>
 
-      <h2 className="text-primary 2xl:text-4xl lg:text-3xl sm:text-2xl text-xl text-center roboto-serif-font font-semibold mb-3">
+      <h2 className="text-primary 2xl:text-4xl lg:text-xl sm:text-2xl text-xl text-center roboto-serif-font font-semibold mb-3">
         Choose Your Online Debt Collection and Revenue Management Video Training Subscription Plan
       </h2>
 
