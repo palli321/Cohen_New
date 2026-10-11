@@ -54,6 +54,7 @@ const plans = [
     price: "Contact for Pricing",
     duration: "",
     employees: "Supports 1+20 or more Employees",
+    proposal: "Proposal Pricing ; 21 and more Participants", // 👈 naya line
     days: "Access to 20 Days of Training",
     accent: "#f8c67b",
     badge: null,
@@ -104,6 +105,11 @@ const PremiumPlans = () => {
       </h2>
 
       <br></br>
+
+<p className="text-center text-base sm:text-lg text-gray-600 roboto-serif-font font-medium mx-auto mb-3">
+        Subscription available ; January, 2027
+      </p>
+
       <p className="text-primary text-center 2xl:text-4xl lg:text-3xl sm:text-2xl text-xl text-blue-600 roboto-serif-font font-semibold mx-auto mb-12">
         Introductory Subscription Prices
       </p>
@@ -140,12 +146,23 @@ const PremiumPlans = () => {
             </h3>
 
             <p
-              className={`text-center text-sm font-medium mb-4 ${
-                plan.dark ? "text-gray-200" : "text-gray-500"
-              }`}
+              className={`text-center text-sm font-medium ${
+                plan.proposal ? "mb-1" : "mb-4"
+              } ${plan.dark ? "text-gray-200" : "text-gray-500"}`}
             >
               {plan.employees}
             </p>
+
+            {/* Sirf Platinum me: Proposal Pricing line */}
+            {plan.proposal && (
+              <p
+                className={`text-center text-sm font-semibold mb-4 ${
+                  plan.dark ? "text-[#f8c67b]" : "text-primary"
+                }`}
+              >
+                {plan.proposal}
+              </p>
+            )}
 
             <div className="text-center mb-4">
               <span
@@ -206,7 +223,7 @@ const PremiumPlans = () => {
         ))}
       </div>
 
-      <p className="text-center text-sm text-gray-500 max-w-[800px] mx-auto mt-10 leading-relaxed">
+      <p className="text-center text-base md:text-lg text-gray-500 max-w-[900px] mx-auto mt-10 leading-relaxed">
         This is a self-managed system where an assigned member (see roles above) will enroll
         the participant(s) and make the required payment. At the end of the training program
         each enrollee must print his/her certificate of completion.
@@ -214,7 +231,7 @@ const PremiumPlans = () => {
         Questions or concerns: please contact{" "}
         <a
           href="mailto:training@cohenandklein.com"
-          className="text-blue-600 font-medium underline"
+          className="text-blue-600 font-semibold underline"
         >
           training@cohenandklein.com
         </a>

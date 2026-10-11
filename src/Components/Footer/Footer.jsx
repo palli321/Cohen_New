@@ -42,7 +42,18 @@ const Footer = () => {
                   key={data.id}
                   className="text-base hover:text-hoverclr duration-200"
                 >
-                  <Link to={data.link}>{data.name}</Link>
+                  {data.pdf ? (
+                    // PDF wala link (History) -> PDF khulegi
+                    <a
+                      href={data.pdf}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {data.name}
+                    </a>
+                  ) : (
+                    <Link to={data.link}>{data.name}</Link>
+                  )}
                 </li>
               ))}
             </ul>
@@ -58,7 +69,8 @@ const Footer = () => {
                   <h4 className="text-lg font-medium">Florida Office:</h4>
                 </div>
                 <p className="text-base  font-light">
-                  8362 Pines Boulevard, Pembroke Pines, FL 33024
+                  8362 Pines Boulevard, Pembroke Pines, FL 33024 
+                  - Mail Distribution centre
                 </p>
                 <div className="flex flex-col gap-2 pt-2">
                   <a
@@ -77,7 +89,7 @@ const Footer = () => {
                       alt="Telephone"
                       className="w-5 h-5"
                     />{" "}
-                    954-731-6606 - Mail Distribution centre
+                    954-731-6606 
                   </a>
                 </div>
               </div>

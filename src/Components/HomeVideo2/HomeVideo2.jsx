@@ -123,6 +123,13 @@ const HomeVideo2 = () => {
     <div className="pt-9 padding-2xl lg:px-15 px-4 roboto">
       <br />
 
+      {/* Preview Access Heading */}
+      <div className="mx-auto flex justify-center">
+        <h2 className="text-primary 2xl:text-4xl lg:text-3xl sm:text-2xl text-xl text-center roboto-serif-font font-semibold mb-3">
+          Preview Access To Sixteen (16) Debt Collections Strategies &amp; Techniques Training Videos
+        </h2>
+      </div>
+
       {/* Heading - click pe PDF khulegi, underline nahi */}
       <div className="mx-auto flex justify-center">
         <h2 className="text-primary 2xl:text-4xl lg:text-3xl sm:text-2xl text-xl text-center roboto-serif-font font-semibold mb-3">
@@ -132,8 +139,8 @@ const HomeVideo2 = () => {
             rel="noopener noreferrer"
             className="no-underline hover:no-underline cursor-pointer"
           >
-            Who Should Subscribe To These On-Line Debt Collection & Revenue
-            Management Video Training Courses
+            Who Should Subscribe To These On-Line Debt Collection Strategies & Techniques 
+            Training Videos
           </a>
         </h2>
       </div>

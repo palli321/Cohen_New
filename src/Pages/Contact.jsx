@@ -297,12 +297,15 @@ const handleSubmit = async (e) => {
               {" "}
               <icons.MdOutlineLocationOn className="h-[40px] w-[40px]" />
             </span>
-            <h5 className="font-semibold text-xl text-primary">Main Office</h5>
+            {/* <h5 className="font-semibold text-xl text-primary">
+              Main Office
+            </h5> */}
             <div className="flex flex-col gap-1 justify-center items-center text-blacklight">
               <span>8362 Pines Boulevard,</span>
               <span>Pembroke Pines, FL 33024</span>
+              <span>Mail Distribution centre</span>
               <span>Telephone: 954-731-6340</span>
-              <span>Fax: 954-731-6606 - Mail Distribution centre</span>
+              <span>Fax: 954-731-6606 </span>
             </div>
           </div>
           <div className="flex justify-center flex-col items-center gap-2 bg-[#E9FFF9] py-10 rounded-md">

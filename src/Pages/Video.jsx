@@ -1,5 +1,9 @@
 import React, { useState } from "react";
 
+// Direct PDF link
+const PDF_URL =
+  "https://www.cohenandklein.com/assets/2026_%20Debt%20Collections%20and%20Revenue%20Management%20Training%20Scheduletion-jwZHKtlI.pdf";
+
 const videoData = [
   {
     id: 1,
@@ -26,45 +30,58 @@ const videoData = [
     desc: "Managing revenue and cash flow in any business requires a unique blend of firm recovery strategies and exceptional customer relations. In this video, Cohen & Klein Consulting, Inc., takes you inside a specialized training session focused on the high-stakes world of Revenue Recovery and Debt Collections. Discover how organizations are moving beyond traditional collection approaches to adopt a proactive, data-driven methodology that secures cash flow while maintaining strong customer relationships.",
   },
   {
-  id: 5,
-  videoUrl: "https://www.youtube.com/embed/UIWGiSZqytQ",
-  title: "Our Vision & Mission: The Driving Force Behind Cohen & Klein Consulting, Inc. What drives a global consulting firm to achieve excellence?",
-  desc: "In this video, it shows the heart and soul of Cohen & Klein Consulting—our Vision and Mission. More than just words on a wall, our mission is to bridge the skills gap, empower professionals, and provide organizations with the strategic frameworks they need to thrive in a competitive global economy. From debt collections and revenue management training to leadership and professional development, Cohen & Klein Consulting, are committed to being the catalyst for organizational transformation."
-},
-{
-  id: 6,
-  videoUrl: "https://www.youtube.com/embed/Nbq82TIDBvw",
-  title: "Is your debt collection department process is proactive or reactive?",
-  desc: "Video 102 of our series, Cohen & Klein Consulting, Inc. explores how to streamline and establish a highly effective debt collections and revenue department. Uncollected accounts don’t just sit idle—they grow more complex and harder to resolve over time."
-},
-{
-  id: 7,
-  videoUrl: "https://www.youtube.com/embed/qJ0Z16ps7Ls",
-  title: "Transforming Professional Standards: Inside Cohen & Klein Consulting’s Training Excellence ",
-  desc: "Success isn't just about what you know—it's about how you apply it. This video, takes you inside a live training session hosted by Cohen & Klein Consulting, showcasing the energy, engagement, and expertise that define our world-class professional programs."
-},
-{
-  id: 8,
-  videoUrl: "https://www.youtube.com/embed/vNS3Dse8lqM",
-  title: "Streamline Your Debt Collection & Revenue Department",
-  desc: "This video from Cohen & Klein Consulting, Inc. outlines their comprehensive training courses designed to help private and public sector institutions effectively handle delinquent accounts. Whether you're dealing with government tax collections, utility payments, or healthcare claims, this training equips your staff—from new collectors to management—with practical, ethical, and results-driven strategies."
-}
-
-
+    id: 5,
+    videoUrl: "https://www.youtube.com/embed/UIWGiSZqytQ",
+    title: "Our Vision & Mission: The Driving Force Behind Cohen & Klein Consulting, Inc. What drives a global consulting firm to achieve excellence?",
+    desc: "In this video, it shows the heart and soul of Cohen & Klein Consulting—our Vision and Mission. More than just words on a wall, our mission is to bridge the skills gap, empower professionals, and provide organizations with the strategic frameworks they need to thrive in a competitive global economy. From debt collections and revenue management training to leadership and professional development, Cohen & Klein Consulting, are committed to being the catalyst for organizational transformation.",
+  },
+  {
+    id: 6,
+    videoUrl: "https://www.youtube.com/embed/Nbq82TIDBvw",
+    title: "Is your debt collection department process is proactive or reactive?",
+    desc: "Video 102 of our series, Cohen & Klein Consulting, Inc. explores how to streamline and establish a highly effective debt collections and revenue department. Uncollected accounts don’t just sit idle—they grow more complex and harder to resolve over time.",
+  },
+  {
+    id: 7,
+    videoUrl: "https://www.youtube.com/embed/qJ0Z16ps7Ls",
+    title: "Transforming Professional Standards: Inside Cohen & Klein Consulting’s Training Excellence ",
+    desc: "Success isn't just about what you know—it's about how you apply it. This video, takes you inside a live training session hosted by Cohen & Klein Consulting, showcasing the energy, engagement, and expertise that define our world-class professional programs.",
+  },
+  {
+    id: 8,
+    videoUrl: "https://www.youtube.com/embed/vNS3Dse8lqM",
+    title: "Streamline Your Debt Collection & Revenue Department",
+    desc: "This video from Cohen & Klein Consulting, Inc. outlines their comprehensive training courses designed to help private and public sector institutions effectively handle delinquent accounts. Whether you're dealing with government tax collections, utility payments, or healthcare claims, this training equips your staff—from new collectors to management—with practical, ethical, and results-driven strategies.",
+  },
+  {
+    id: 9,
+    videoUrl: "",
+    pdfUrl: PDF_URL, // 👈 isme PDF dikhegi
+    title: "Training Outline",
+    desc: "",
+  },
 ];
 
 const Video = () => {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
-  const [selectedVideo, setSelectedVideo] = useState("");
+  const [selectedUrl, setSelectedUrl] = useState("");
+  const [selectedType, setSelectedType] = useState("video"); // "video" | "pdf"
 
-  const handleOpen = (url) => {
-    setSelectedVideo(url);
+  const handleOpen = (item) => {
+    if (item.pdfUrl) {
+      setSelectedUrl(item.pdfUrl);
+      setSelectedType("pdf");
+    } else {
+      setSelectedUrl(item.videoUrl);
+      setSelectedType("video");
+    }
     setIsPopupOpen(true);
   };
 
   const handleClose = () => {
     setIsPopupOpen(false);
-    setSelectedVideo("");
+    setSelectedUrl("");
+    setSelectedType("video");
   };
 
   return (
@@ -77,23 +94,30 @@ const Video = () => {
 
       <div className="py-[70px]">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-center">
-
           {videoData.map((video) => (
             <div
               key={video.id}
               className="max-w-[410px] w-full rounded-lg overflow-hidden drop-shadow-[0_0_40px_rgba(1,61,123,0.1)] bg-white p-[20px] cursor-pointer"
-              onClick={() => handleOpen(video.videoUrl)}
+              onClick={() => handleOpen(video)}
             >
-              {/* Video Thumbnail */}
+              {/* Thumbnail */}
               <div className="relative h-[200px] rounded-xl overflow-hidden">
-                <iframe
-                  className="w-full h-full"
-                  src={video.videoUrl}
-                  title={video.title}
-                  frameBorder="0"
-                  allow="autoplay; encrypted-media"
-                  allowFullScreen
-                ></iframe>
+                {video.pdfUrl ? (
+                  // PDF card ke liye placeholder (iframe me PDF load nahi karte, heavy hota hai)
+                  <div className="w-full h-full flex flex-col items-center justify-center bg-[#f1f6fb] text-primary gap-2">
+                    <span className="text-5xl">📄</span>
+                    <span className="text-sm font-semibold">Click to view PDF</span>
+                  </div>
+                ) : (
+                  <iframe
+                    className="w-full h-full pointer-events-none"
+                    src={video.videoUrl}
+                    title={video.title}
+                    frameBorder="0"
+                    allow="autoplay; encrypted-media"
+                    allowFullScreen
+                  ></iframe>
+                )}
               </div>
 
               {/* Text Section */}
@@ -101,9 +125,7 @@ const Video = () => {
                 <h2 className="text-[18px] font-semibold text-primary">
                   {video.title}
                 </h2>
-                <p className="text-[#021326] text-sm">
-                  {video.desc}
-                </p>
+                <p className="text-[#021326] text-sm">{video.desc}</p>
               </div>
             </div>
           ))}
@@ -120,22 +142,37 @@ const Video = () => {
               onClick={(e) => e.stopPropagation()}
             >
               <button
-                className="absolute top-3 right-3 bg-black px-4 py-2 text-white text-lg rounded"
+                className="absolute top-3 right-3 bg-black px-4 py-2 text-white text-lg rounded z-10"
                 onClick={handleClose}
               >
                 ✕ Close
               </button>
 
-              <div className="relative w-full h-0 pb-[56.25%]">
-                <iframe
-                  className="absolute top-0 left-0 w-full h-full"
-                  src={selectedVideo}
-                  title="Selected Video"
-                  frameBorder="0"
-                  allow="autoplay; encrypted-media; picture-in-picture"
-                  allowFullScreen
-                ></iframe>
-              </div>
+              {selectedType === "pdf" ? (
+                // PDF viewer
+                <div className="w-full h-[80vh] pt-12">
+                  <iframe
+                    className="w-full h-full"
+                    src={selectedUrl}
+                    title="Training Outline PDF"
+                    frameBorder="0"
+                  ></iframe>
+                  {/* Fallback: agar iframe me PDF block ho jaye */}
+                
+                </div>
+              ) : (
+                // Video player
+                <div className="relative w-full h-0 pb-[56.25%]">
+                  <iframe
+                    className="absolute top-0 left-0 w-full h-full"
+                    src={selectedUrl}
+                    title="Selected Video"
+                    frameBorder="0"
+                    allow="autoplay; encrypted-media; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
+                </div>
+              )}
             </div>
           </div>
         )}
