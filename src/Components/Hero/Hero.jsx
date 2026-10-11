@@ -6,6 +6,7 @@ import {Pdfdata} from "../../PdfData.js";
 import yellowpatti from "../../assets/Images/yellow-patti.png";
 import { Link } from "react-router-dom";
 import CoursePdf from "../../assets/CourcesPDF/CoursePdf.js";
+
 const Hero = () => {
   const [showCategories, setShowCategories] = useState(false);
   const [searchTerm, setSearchTerm] = useState("");
@@ -91,8 +92,11 @@ const Hero = () => {
                 </Link>
               </div>
               <div className="rounded-[12px] sm:rounded-[20px] 2xl:px-8 2xl:pb-3 pt-4 pb-3 sm:px-3 py-3 bg-gradient-cardFour flex items-center justify-center">
-                <Link
-                  onClick={() => window.open(CoursePdf.debtcollectionpdf, "_blank")}
+                {/* Nayi PDF: newcustomiseddebt.pdf */}
+                <a
+                  href={CoursePdf.newcustomiseddebtpdf}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="flex flex-col text-white sm:gap-4 gap-0 items-center text-center"
                 >
                   <h2 className="2xl:text-5xl leading-[24px] sm:text-4xl text-2xl font-bold roboto">
@@ -101,7 +105,7 @@ const Hero = () => {
                   <span className="2xl:text-[22px] leading-[26px] sm:text-base text-xs roboto">
                    Customized Debt Collection and Revenue Management Courses
                   </span>
-                </Link>
+                </a>
               </div>
             </div>
           </div>

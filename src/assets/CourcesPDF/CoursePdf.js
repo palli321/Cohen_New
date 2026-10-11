@@ -83,6 +83,9 @@ import sometopicpdf from "./Some Topic.pdf"
 import historypdf from "./History-C&K.pdf"
 import pdf2027flyer from "./2027 Updated Flyer.pdf";
 
+// 👇 NAYI PDF (Hero ke 100+ card ke liye)
+import newCustomisedDebt from "./newcustomiseddebt.pdf";
+
 
 const CoursePdf = {
     sometopicpdf,
@@ -167,7 +170,10 @@ const CoursePdf = {
     Testimonials131412032027,
     Testimonials131412032028,
     Testimonials131412032029,
-    Testimonials131412032035
+    Testimonials131412032035,
+
+    // 👇 NAYI KEY (Hero.jsx me CoursePdf.newcustomiseddebtpdf use hogi)
+    newcustomiseddebtpdf: newCustomisedDebt,
 };
 
 export default CoursePdf;

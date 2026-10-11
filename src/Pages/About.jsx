@@ -172,7 +172,7 @@ const About = () => {
               </div>
               <div className="rounded-[12px] sm:rounded-[20px] 2xl:px-8 2xl:pb-3 pt-4 pb-3 sm:px-3 py-3 bg-gradient-cardFour flex items-center justify-center">
                 <Link
-                  onClick={() => window.open(CoursePdf.debtcollectionpdf, "_blank")}
+                  onClick={() => window.open(CoursePdf.newcustomiseddebtpdf, "_blank")}
                   className="flex flex-col text-white sm:gap-4 gap-0 items-center text-center"
                 >
                   <h2 className="2xl:text-5xl leading-[24px] sm:text-4xl text-2xl font-bold roboto">

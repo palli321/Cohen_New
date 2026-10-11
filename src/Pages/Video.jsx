@@ -57,7 +57,7 @@ const videoData = [
     id: 9,
     videoUrl: "",
     pdfUrl: PDF_URL, // 👈 isme PDF dikhegi
-    title: "Training Outline",
+    title: "Debt Collection Training Outline",
     desc: "",
   },
 ];

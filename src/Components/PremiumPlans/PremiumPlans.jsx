@@ -54,7 +54,7 @@ const plans = [
     price: "Contact for Pricing",
     duration: "",
     employees: "Supports 1+20 or more Employees",
-    proposal: "Proposal Pricing ; 21 and more Participants", // 👈 naya line
+    proposal: "Proposal Pricing : 21 and more Participants", // 👈 naya line
     days: "Access to 20 Days of Training",
     accent: "#f8c67b",
     badge: null,
@@ -107,7 +107,7 @@ const PremiumPlans = () => {
       <br></br>
 
 <p className="text-center text-base sm:text-lg text-gray-600 roboto-serif-font font-medium mx-auto mb-3">
-        Subscription available ; January, 2027
+        Subscription available : January, 2027
       </p>
 
       <p className="text-primary text-center 2xl:text-4xl lg:text-3xl sm:text-2xl text-xl text-blue-600 roboto-serif-font font-semibold mx-auto mb-12">
